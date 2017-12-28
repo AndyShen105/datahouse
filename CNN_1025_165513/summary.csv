@@ -1,0 +1,2 @@
+runtime_sec,avg_recovery_time_sec,target_loss,ml_model,batch_size,learning_rate,final_lossos_size,os_size,n_iter_per_os
+15236.125139,2.306340,0.500000,CNN,100,0.001000,0.487595,2,60
