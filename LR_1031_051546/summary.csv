@@ -1,0 +1,2 @@
+job_id,runtime_sec,avg_recovery_time_sec,target_loss,ml_model,batch_size,learning_rate,final_lossos_size,os_size,n_iter_per_os,online_os_size,online_n_iter_per_os,check_reconfig,do_reconfig,total_iteration,init_duration,estimation_func
+LR_1031_051546,28188.757801,8.670684,0.005000,LR,1000,0.001000,0.004969,10,35,100,500,11,0,6177,3767.877261,bo

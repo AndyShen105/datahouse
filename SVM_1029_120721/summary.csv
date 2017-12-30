@@ -1,0 +1,2 @@
+job_id,runtime_sec,avg_recovery_time_sec,target_loss,ml_model,batch_size,learning_rate,final_lossos_size,os_size,n_iter_per_os,online_os_size,online_n_iter_per_os,check_reconfig,do_reconfig,total_iteration,init_duration,estimation_func
+SVM_1029_120721,1930.770161,5.362670,0.070000,SVM,4000,0.000100,0.069031,20,60,100,500,9,7,5656,1008.879480,bo

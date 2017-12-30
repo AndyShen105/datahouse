@@ -1,0 +1,2 @@
+job_id,runtime_sec,avg_recovery_time_sec,target_loss,ml_model,batch_size,learning_rate,final_lossos_size,os_size,n_iter_per_os,online_os_size,online_n_iter_per_os,check_reconfig,do_reconfig,total_iteration
+CNN_1028_023259,970.660053,5.568587,0.500000,CNN,100,0.000100,0.492338,20,60,100,1500,12,12,18337

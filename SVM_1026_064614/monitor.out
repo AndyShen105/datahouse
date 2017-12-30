@@ -1,0 +1,1555 @@
+10-26 14:46 root         DEBUG    os_size = 3, num_iter_per_os = 60
+10-26 14:46 Monitor      INFO     Start connecting to server, ssd02:5672
+10-26 14:46 Monitor      INFO     Successfully connected to MQ
+10-26 14:46 amqp         DEBUG    Start from server, version: 0.9, properties: {'information': 'Licensed under the MPL.  See http://www.rabbitmq.com/', 'product': 'RabbitMQ', 'copyright': 'Copyright (C) 2007-2014 GoPivotal, Inc.', 'capabilities': {'exchange_exchange_bindings': True, 'connection.blocked': True, 'authentication_failure_close': True, 'basic.nack': True, 'per_consumer_qos': True, 'consumer_priorities': True, 'consumer_cancel_notify': True, 'publisher_confirms': True}, 'cluster_name': 'rabbit@ssd02.dbg.private', 'platform': 'Erlang/OTP', 'version': '3.3.5'}, mechanisms: ['AMQPLAIN', 'PLAIN'], locales: [u'en_US']
+10-26 14:46 amqp         DEBUG    using channel_id: 1
+10-26 14:46 amqp         DEBUG    Channel open
+10-26 14:46 Monitor      DEBUG    Receive msg from ssd09_2222 type: DeRegisterComputeNode
+10-26 14:46 Monitor      ERROR    No compute node with id "ssd09_2222"
+Traceback (most recent call last):
+  File "monitor.py", line 127, in message_handler
+    self.message_logic(message)
+  File "monitor.py", line 149, in message_logic
+    self.handle_deregister_compute_node(message_obj)
+  File "monitor.py", line 491, in handle_deregister_compute_node
+    self.compute_node_manager.remove_compute_node(compute_node_id)
+  File "monitor.py", line 655, in remove_compute_node
+    compute_node_obj = self.get_compute_node_by_id(compute_node_id)
+  File "monitor.py", line 643, in get_compute_node_by_id
+    raise Exception("No compute node with id \"%s\"" % id)
+Exception: No compute node with id "ssd09_2222"
+10-26 14:46 Monitor      DEBUG    Receive msg from ssd18_2222 type: DeRegisterComputeNode
+10-26 14:46 Monitor      ERROR    No compute node with id "ssd18_2222"
+Traceback (most recent call last):
+  File "monitor.py", line 127, in message_handler
+    self.message_logic(message)
+  File "monitor.py", line 149, in message_logic
+    self.handle_deregister_compute_node(message_obj)
+  File "monitor.py", line 491, in handle_deregister_compute_node
+    self.compute_node_manager.remove_compute_node(compute_node_id)
+  File "monitor.py", line 655, in remove_compute_node
+    compute_node_obj = self.get_compute_node_by_id(compute_node_id)
+  File "monitor.py", line 643, in get_compute_node_by_id
+    raise Exception("No compute node with id \"%s\"" % id)
+Exception: No compute node with id "ssd18_2222"
+10-26 14:46 Monitor      DEBUG    Receive msg from ssd23_2222 type: DeRegisterComputeNode
+10-26 14:46 Monitor      ERROR    No compute node with id "ssd23_2222"
+Traceback (most recent call last):
+  File "monitor.py", line 127, in message_handler
+    self.message_logic(message)
+  File "monitor.py", line 149, in message_logic
+    self.handle_deregister_compute_node(message_obj)
+  File "monitor.py", line 491, in handle_deregister_compute_node
+    self.compute_node_manager.remove_compute_node(compute_node_id)
+  File "monitor.py", line 655, in remove_compute_node
+    compute_node_obj = self.get_compute_node_by_id(compute_node_id)
+  File "monitor.py", line 643, in get_compute_node_by_id
+    raise Exception("No compute node with id \"%s\"" % id)
+Exception: No compute node with id "ssd23_2222"
+10-26 14:46 Monitor      DEBUG    Receive msg from ssd22_2222 type: DeRegisterComputeNode
+10-26 14:46 Monitor      ERROR    No compute node with id "ssd22_2222"
+Traceback (most recent call last):
+  File "monitor.py", line 127, in message_handler
+    self.message_logic(message)
+  File "monitor.py", line 149, in message_logic
+    self.handle_deregister_compute_node(message_obj)
+  File "monitor.py", line 491, in handle_deregister_compute_node
+    self.compute_node_manager.remove_compute_node(compute_node_id)
+  File "monitor.py", line 655, in remove_compute_node
+    compute_node_obj = self.get_compute_node_by_id(compute_node_id)
+  File "monitor.py", line 643, in get_compute_node_by_id
+    raise Exception("No compute node with id \"%s\"" % id)
+Exception: No compute node with id "ssd22_2222"
+10-26 14:46 Monitor      DEBUG    Receive msg from ssd08_2222 type: DeRegisterComputeNode
+10-26 14:46 Monitor      ERROR    No compute node with id "ssd08_2222"
+Traceback (most recent call last):
+  File "monitor.py", line 127, in message_handler
+    self.message_logic(message)
+  File "monitor.py", line 149, in message_logic
+    self.handle_deregister_compute_node(message_obj)
+  File "monitor.py", line 491, in handle_deregister_compute_node
+    self.compute_node_manager.remove_compute_node(compute_node_id)
+  File "monitor.py", line 655, in remove_compute_node
+    compute_node_obj = self.get_compute_node_by_id(compute_node_id)
+  File "monitor.py", line 643, in get_compute_node_by_id
+    raise Exception("No compute node with id \"%s\"" % id)
+Exception: No compute node with id "ssd08_2222"
+10-26 14:46 Monitor      DEBUG    Receive msg from ssd13_2222 type: DeRegisterComputeNode
+10-26 14:46 Monitor      ERROR    No compute node with id "ssd13_2222"
+Traceback (most recent call last):
+  File "monitor.py", line 127, in message_handler
+    self.message_logic(message)
+  File "monitor.py", line 149, in message_logic
+    self.handle_deregister_compute_node(message_obj)
+  File "monitor.py", line 491, in handle_deregister_compute_node
+    self.compute_node_manager.remove_compute_node(compute_node_id)
+  File "monitor.py", line 655, in remove_compute_node
+    compute_node_obj = self.get_compute_node_by_id(compute_node_id)
+  File "monitor.py", line 643, in get_compute_node_by_id
+    raise Exception("No compute node with id \"%s\"" % id)
+Exception: No compute node with id "ssd13_2222"
+10-26 14:46 Monitor      DEBUG    Receive msg from ssd11_2222 type: DeRegisterComputeNode
+10-26 14:46 Monitor      ERROR    No compute node with id "ssd11_2222"
+Traceback (most recent call last):
+  File "monitor.py", line 127, in message_handler
+    self.message_logic(message)
+  File "monitor.py", line 149, in message_logic
+    self.handle_deregister_compute_node(message_obj)
+  File "monitor.py", line 491, in handle_deregister_compute_node
+    self.compute_node_manager.remove_compute_node(compute_node_id)
+  File "monitor.py", line 655, in remove_compute_node
+    compute_node_obj = self.get_compute_node_by_id(compute_node_id)
+  File "monitor.py", line 643, in get_compute_node_by_id
+    raise Exception("No compute node with id \"%s\"" % id)
+Exception: No compute node with id "ssd11_2222"
+10-26 14:46 Monitor      DEBUG    Receive msg from ssd17_2222 type: DeRegisterComputeNode
+10-26 14:46 Monitor      ERROR    No compute node with id "ssd17_2222"
+Traceback (most recent call last):
+  File "monitor.py", line 127, in message_handler
+    self.message_logic(message)
+  File "monitor.py", line 149, in message_logic
+    self.handle_deregister_compute_node(message_obj)
+  File "monitor.py", line 491, in handle_deregister_compute_node
+    self.compute_node_manager.remove_compute_node(compute_node_id)
+  File "monitor.py", line 655, in remove_compute_node
+    compute_node_obj = self.get_compute_node_by_id(compute_node_id)
+  File "monitor.py", line 643, in get_compute_node_by_id
+    raise Exception("No compute node with id \"%s\"" % id)
+Exception: No compute node with id "ssd17_2222"
+10-26 14:46 Monitor      DEBUG    Receive msg from ssd14_2222 type: DeRegisterComputeNode
+10-26 14:46 Monitor      ERROR    No compute node with id "ssd14_2222"
+Traceback (most recent call last):
+  File "monitor.py", line 127, in message_handler
+    self.message_logic(message)
+  File "monitor.py", line 149, in message_logic
+    self.handle_deregister_compute_node(message_obj)
+  File "monitor.py", line 491, in handle_deregister_compute_node
+    self.compute_node_manager.remove_compute_node(compute_node_id)
+  File "monitor.py", line 655, in remove_compute_node
+    compute_node_obj = self.get_compute_node_by_id(compute_node_id)
+  File "monitor.py", line 643, in get_compute_node_by_id
+    raise Exception("No compute node with id \"%s\"" % id)
+Exception: No compute node with id "ssd14_2222"
+10-26 14:46 Monitor      DEBUG    Receive msg from ssd31_2222 type: DeRegisterComputeNode
+10-26 14:46 Monitor      ERROR    No compute node with id "ssd31_2222"
+Traceback (most recent call last):
+  File "monitor.py", line 127, in message_handler
+    self.message_logic(message)
+  File "monitor.py", line 149, in message_logic
+    self.handle_deregister_compute_node(message_obj)
+  File "monitor.py", line 491, in handle_deregister_compute_node
+    self.compute_node_manager.remove_compute_node(compute_node_id)
+  File "monitor.py", line 655, in remove_compute_node
+    compute_node_obj = self.get_compute_node_by_id(compute_node_id)
+  File "monitor.py", line 643, in get_compute_node_by_id
+    raise Exception("No compute node with id \"%s\"" % id)
+Exception: No compute node with id "ssd31_2222"
+10-26 14:46 Monitor      DEBUG    Receive msg from ssd12_2222 type: DeRegisterComputeNode
+10-26 14:46 Monitor      ERROR    No compute node with id "ssd12_2222"
+Traceback (most recent call last):
+  File "monitor.py", line 127, in message_handler
+    self.message_logic(message)
+  File "monitor.py", line 149, in message_logic
+    self.handle_deregister_compute_node(message_obj)
+  File "monitor.py", line 491, in handle_deregister_compute_node
+    self.compute_node_manager.remove_compute_node(compute_node_id)
+  File "monitor.py", line 655, in remove_compute_node
+    compute_node_obj = self.get_compute_node_by_id(compute_node_id)
+  File "monitor.py", line 643, in get_compute_node_by_id
+    raise Exception("No compute node with id \"%s\"" % id)
+Exception: No compute node with id "ssd12_2222"
+10-26 14:46 Monitor      DEBUG    Receive msg from ssd25_2222 type: DeRegisterComputeNode
+10-26 14:46 Monitor      ERROR    No compute node with id "ssd25_2222"
+Traceback (most recent call last):
+  File "monitor.py", line 127, in message_handler
+    self.message_logic(message)
+  File "monitor.py", line 149, in message_logic
+    self.handle_deregister_compute_node(message_obj)
+  File "monitor.py", line 491, in handle_deregister_compute_node
+    self.compute_node_manager.remove_compute_node(compute_node_id)
+  File "monitor.py", line 655, in remove_compute_node
+    compute_node_obj = self.get_compute_node_by_id(compute_node_id)
+  File "monitor.py", line 643, in get_compute_node_by_id
+    raise Exception("No compute node with id \"%s\"" % id)
+Exception: No compute node with id "ssd25_2222"
+10-26 14:46 Monitor      DEBUG    Receive msg from ssd29_2222 type: DeRegisterComputeNode
+10-26 14:46 Monitor      ERROR    No compute node with id "ssd29_2222"
+Traceback (most recent call last):
+  File "monitor.py", line 127, in message_handler
+    self.message_logic(message)
+  File "monitor.py", line 149, in message_logic
+    self.handle_deregister_compute_node(message_obj)
+  File "monitor.py", line 491, in handle_deregister_compute_node
+    self.compute_node_manager.remove_compute_node(compute_node_id)
+  File "monitor.py", line 655, in remove_compute_node
+    compute_node_obj = self.get_compute_node_by_id(compute_node_id)
+  File "monitor.py", line 643, in get_compute_node_by_id
+    raise Exception("No compute node with id \"%s\"" % id)
+Exception: No compute node with id "ssd29_2222"
+10-26 14:46 Monitor      DEBUG    Receive msg from ssd19_2222 type: DeRegisterComputeNode
+10-26 14:46 Monitor      ERROR    No compute node with id "ssd19_2222"
+Traceback (most recent call last):
+  File "monitor.py", line 127, in message_handler
+    self.message_logic(message)
+  File "monitor.py", line 149, in message_logic
+    self.handle_deregister_compute_node(message_obj)
+  File "monitor.py", line 491, in handle_deregister_compute_node
+    self.compute_node_manager.remove_compute_node(compute_node_id)
+  File "monitor.py", line 655, in remove_compute_node
+    compute_node_obj = self.get_compute_node_by_id(compute_node_id)
+  File "monitor.py", line 643, in get_compute_node_by_id
+    raise Exception("No compute node with id \"%s\"" % id)
+Exception: No compute node with id "ssd19_2222"
+10-26 14:46 Monitor      DEBUG    Receive msg from ssd33_2222 type: DeRegisterComputeNode
+10-26 14:46 Monitor      ERROR    No compute node with id "ssd33_2222"
+Traceback (most recent call last):
+  File "monitor.py", line 127, in message_handler
+    self.message_logic(message)
+  File "monitor.py", line 149, in message_logic
+    self.handle_deregister_compute_node(message_obj)
+  File "monitor.py", line 491, in handle_deregister_compute_node
+    self.compute_node_manager.remove_compute_node(compute_node_id)
+  File "monitor.py", line 655, in remove_compute_node
+    compute_node_obj = self.get_compute_node_by_id(compute_node_id)
+  File "monitor.py", line 643, in get_compute_node_by_id
+    raise Exception("No compute node with id \"%s\"" % id)
+Exception: No compute node with id "ssd33_2222"
+10-26 14:46 Monitor      DEBUG    Receive msg from ssd35_2222 type: DeRegisterComputeNode
+10-26 14:46 Monitor      ERROR    No compute node with id "ssd35_2222"
+Traceback (most recent call last):
+  File "monitor.py", line 127, in message_handler
+    self.message_logic(message)
+  File "monitor.py", line 149, in message_logic
+    self.handle_deregister_compute_node(message_obj)
+  File "monitor.py", line 491, in handle_deregister_compute_node
+    self.compute_node_manager.remove_compute_node(compute_node_id)
+  File "monitor.py", line 655, in remove_compute_node
+    compute_node_obj = self.get_compute_node_by_id(compute_node_id)
+  File "monitor.py", line 643, in get_compute_node_by_id
+    raise Exception("No compute node with id \"%s\"" % id)
+Exception: No compute node with id "ssd35_2222"
+10-26 14:46 Monitor      DEBUG    Receive msg from ssd30_2222 type: DeRegisterComputeNode
+10-26 14:46 Monitor      ERROR    No compute node with id "ssd30_2222"
+Traceback (most recent call last):
+  File "monitor.py", line 127, in message_handler
+    self.message_logic(message)
+  File "monitor.py", line 149, in message_logic
+    self.handle_deregister_compute_node(message_obj)
+  File "monitor.py", line 491, in handle_deregister_compute_node
+    self.compute_node_manager.remove_compute_node(compute_node_id)
+  File "monitor.py", line 655, in remove_compute_node
+    compute_node_obj = self.get_compute_node_by_id(compute_node_id)
+  File "monitor.py", line 643, in get_compute_node_by_id
+    raise Exception("No compute node with id \"%s\"" % id)
+Exception: No compute node with id "ssd30_2222"
+10-26 14:46 Monitor      DEBUG    Receive msg from ssd27_2222 type: DeRegisterComputeNode
+10-26 14:46 Monitor      ERROR    No compute node with id "ssd27_2222"
+Traceback (most recent call last):
+  File "monitor.py", line 127, in message_handler
+    self.message_logic(message)
+  File "monitor.py", line 149, in message_logic
+    self.handle_deregister_compute_node(message_obj)
+  File "monitor.py", line 491, in handle_deregister_compute_node
+    self.compute_node_manager.remove_compute_node(compute_node_id)
+  File "monitor.py", line 655, in remove_compute_node
+    compute_node_obj = self.get_compute_node_by_id(compute_node_id)
+  File "monitor.py", line 643, in get_compute_node_by_id
+    raise Exception("No compute node with id \"%s\"" % id)
+Exception: No compute node with id "ssd27_2222"
+10-26 14:46 Monitor      DEBUG    Receive msg from ssd20_2222 type: DeRegisterComputeNode
+10-26 14:46 Monitor      ERROR    No compute node with id "ssd20_2222"
+Traceback (most recent call last):
+  File "monitor.py", line 127, in message_handler
+    self.message_logic(message)
+  File "monitor.py", line 149, in message_logic
+    self.handle_deregister_compute_node(message_obj)
+  File "monitor.py", line 491, in handle_deregister_compute_node
+    self.compute_node_manager.remove_compute_node(compute_node_id)
+  File "monitor.py", line 655, in remove_compute_node
+    compute_node_obj = self.get_compute_node_by_id(compute_node_id)
+  File "monitor.py", line 643, in get_compute_node_by_id
+    raise Exception("No compute node with id \"%s\"" % id)
+Exception: No compute node with id "ssd20_2222"
+10-26 14:46 Monitor      DEBUG    Receive msg from ssd07_2222 type: DeRegisterComputeNode
+10-26 14:46 Monitor      ERROR    No compute node with id "ssd07_2222"
+Traceback (most recent call last):
+  File "monitor.py", line 127, in message_handler
+    self.message_logic(message)
+  File "monitor.py", line 149, in message_logic
+    self.handle_deregister_compute_node(message_obj)
+  File "monitor.py", line 491, in handle_deregister_compute_node
+    self.compute_node_manager.remove_compute_node(compute_node_id)
+  File "monitor.py", line 655, in remove_compute_node
+    compute_node_obj = self.get_compute_node_by_id(compute_node_id)
+  File "monitor.py", line 643, in get_compute_node_by_id
+    raise Exception("No compute node with id \"%s\"" % id)
+Exception: No compute node with id "ssd07_2222"
+10-26 14:46 Monitor      DEBUG    Receive msg from ssd21_2222 type: DeRegisterComputeNode
+10-26 14:46 Monitor      ERROR    No compute node with id "ssd21_2222"
+Traceback (most recent call last):
+  File "monitor.py", line 127, in message_handler
+    self.message_logic(message)
+  File "monitor.py", line 149, in message_logic
+    self.handle_deregister_compute_node(message_obj)
+  File "monitor.py", line 491, in handle_deregister_compute_node
+    self.compute_node_manager.remove_compute_node(compute_node_id)
+  File "monitor.py", line 655, in remove_compute_node
+    compute_node_obj = self.get_compute_node_by_id(compute_node_id)
+  File "monitor.py", line 643, in get_compute_node_by_id
+    raise Exception("No compute node with id \"%s\"" % id)
+Exception: No compute node with id "ssd21_2222"
+10-26 14:46 Monitor      DEBUG    Receive msg from ssd34_2222 type: DeRegisterComputeNode
+10-26 14:46 Monitor      ERROR    No compute node with id "ssd34_2222"
+Traceback (most recent call last):
+  File "monitor.py", line 127, in message_handler
+    self.message_logic(message)
+  File "monitor.py", line 149, in message_logic
+    self.handle_deregister_compute_node(message_obj)
+  File "monitor.py", line 491, in handle_deregister_compute_node
+    self.compute_node_manager.remove_compute_node(compute_node_id)
+  File "monitor.py", line 655, in remove_compute_node
+    compute_node_obj = self.get_compute_node_by_id(compute_node_id)
+  File "monitor.py", line 643, in get_compute_node_by_id
+    raise Exception("No compute node with id \"%s\"" % id)
+Exception: No compute node with id "ssd34_2222"
+10-26 14:46 Monitor      DEBUG    Receive msg from ssd10_2222 type: DeRegisterComputeNode
+10-26 14:46 Monitor      ERROR    No compute node with id "ssd10_2222"
+Traceback (most recent call last):
+  File "monitor.py", line 127, in message_handler
+    self.message_logic(message)
+  File "monitor.py", line 149, in message_logic
+    self.handle_deregister_compute_node(message_obj)
+  File "monitor.py", line 491, in handle_deregister_compute_node
+    self.compute_node_manager.remove_compute_node(compute_node_id)
+  File "monitor.py", line 655, in remove_compute_node
+    compute_node_obj = self.get_compute_node_by_id(compute_node_id)
+  File "monitor.py", line 643, in get_compute_node_by_id
+    raise Exception("No compute node with id \"%s\"" % id)
+Exception: No compute node with id "ssd10_2222"
+10-26 14:46 Monitor      DEBUG    Receive msg from ssd24_2222 type: DeRegisterComputeNode
+10-26 14:46 Monitor      ERROR    No compute node with id "ssd24_2222"
+Traceback (most recent call last):
+  File "monitor.py", line 127, in message_handler
+    self.message_logic(message)
+  File "monitor.py", line 149, in message_logic
+    self.handle_deregister_compute_node(message_obj)
+  File "monitor.py", line 491, in handle_deregister_compute_node
+    self.compute_node_manager.remove_compute_node(compute_node_id)
+  File "monitor.py", line 655, in remove_compute_node
+    compute_node_obj = self.get_compute_node_by_id(compute_node_id)
+  File "monitor.py", line 643, in get_compute_node_by_id
+    raise Exception("No compute node with id \"%s\"" % id)
+Exception: No compute node with id "ssd24_2222"
+10-26 14:46 Monitor      DEBUG    Receive msg from ssd38_2222 type: DeRegisterComputeNode
+10-26 14:46 Monitor      ERROR    No compute node with id "ssd38_2222"
+Traceback (most recent call last):
+  File "monitor.py", line 127, in message_handler
+    self.message_logic(message)
+  File "monitor.py", line 149, in message_logic
+    self.handle_deregister_compute_node(message_obj)
+  File "monitor.py", line 491, in handle_deregister_compute_node
+    self.compute_node_manager.remove_compute_node(compute_node_id)
+  File "monitor.py", line 655, in remove_compute_node
+    compute_node_obj = self.get_compute_node_by_id(compute_node_id)
+  File "monitor.py", line 643, in get_compute_node_by_id
+    raise Exception("No compute node with id \"%s\"" % id)
+Exception: No compute node with id "ssd38_2222"
+10-26 14:46 Monitor      DEBUG    Receive msg from ssd42_2222 type: DeRegisterComputeNode
+10-26 14:46 Monitor      ERROR    No compute node with id "ssd42_2222"
+Traceback (most recent call last):
+  File "monitor.py", line 127, in message_handler
+    self.message_logic(message)
+  File "monitor.py", line 149, in message_logic
+    self.handle_deregister_compute_node(message_obj)
+  File "monitor.py", line 491, in handle_deregister_compute_node
+    self.compute_node_manager.remove_compute_node(compute_node_id)
+  File "monitor.py", line 655, in remove_compute_node
+    compute_node_obj = self.get_compute_node_by_id(compute_node_id)
+  File "monitor.py", line 643, in get_compute_node_by_id
+    raise Exception("No compute node with id \"%s\"" % id)
+Exception: No compute node with id "ssd42_2222"
+10-26 14:46 Monitor      DEBUG    Receive msg from ssd37_2222 type: DeRegisterComputeNode
+10-26 14:46 Monitor      ERROR    No compute node with id "ssd37_2222"
+Traceback (most recent call last):
+  File "monitor.py", line 127, in message_handler
+    self.message_logic(message)
+  File "monitor.py", line 149, in message_logic
+    self.handle_deregister_compute_node(message_obj)
+  File "monitor.py", line 491, in handle_deregister_compute_node
+    self.compute_node_manager.remove_compute_node(compute_node_id)
+  File "monitor.py", line 655, in remove_compute_node
+    compute_node_obj = self.get_compute_node_by_id(compute_node_id)
+  File "monitor.py", line 643, in get_compute_node_by_id
+    raise Exception("No compute node with id \"%s\"" % id)
+Exception: No compute node with id "ssd37_2222"
+10-26 14:46 Monitor      DEBUG    Receive msg from ssd40_2222 type: DeRegisterComputeNode
+10-26 14:46 Monitor      ERROR    No compute node with id "ssd40_2222"
+Traceback (most recent call last):
+  File "monitor.py", line 127, in message_handler
+    self.message_logic(message)
+  File "monitor.py", line 149, in message_logic
+    self.handle_deregister_compute_node(message_obj)
+  File "monitor.py", line 491, in handle_deregister_compute_node
+    self.compute_node_manager.remove_compute_node(compute_node_id)
+  File "monitor.py", line 655, in remove_compute_node
+    compute_node_obj = self.get_compute_node_by_id(compute_node_id)
+  File "monitor.py", line 643, in get_compute_node_by_id
+    raise Exception("No compute node with id \"%s\"" % id)
+Exception: No compute node with id "ssd40_2222"
+10-26 14:46 Monitor      DEBUG    Receive msg from ssd16_2222 type: DeRegisterComputeNode
+10-26 14:46 Monitor      ERROR    No compute node with id "ssd16_2222"
+Traceback (most recent call last):
+  File "monitor.py", line 127, in message_handler
+    self.message_logic(message)
+  File "monitor.py", line 149, in message_logic
+    self.handle_deregister_compute_node(message_obj)
+  File "monitor.py", line 491, in handle_deregister_compute_node
+    self.compute_node_manager.remove_compute_node(compute_node_id)
+  File "monitor.py", line 655, in remove_compute_node
+    compute_node_obj = self.get_compute_node_by_id(compute_node_id)
+  File "monitor.py", line 643, in get_compute_node_by_id
+    raise Exception("No compute node with id \"%s\"" % id)
+Exception: No compute node with id "ssd16_2222"
+10-26 14:46 Monitor      DEBUG    Receive msg from ssd26_2222 type: DeRegisterComputeNode
+10-26 14:46 Monitor      ERROR    No compute node with id "ssd26_2222"
+Traceback (most recent call last):
+  File "monitor.py", line 127, in message_handler
+    self.message_logic(message)
+  File "monitor.py", line 149, in message_logic
+    self.handle_deregister_compute_node(message_obj)
+  File "monitor.py", line 491, in handle_deregister_compute_node
+    self.compute_node_manager.remove_compute_node(compute_node_id)
+  File "monitor.py", line 655, in remove_compute_node
+    compute_node_obj = self.get_compute_node_by_id(compute_node_id)
+  File "monitor.py", line 643, in get_compute_node_by_id
+    raise Exception("No compute node with id \"%s\"" % id)
+Exception: No compute node with id "ssd26_2222"
+10-26 14:46 Monitor      DEBUG    Receive msg from ssd41_2222 type: DeRegisterComputeNode
+10-26 14:46 Monitor      ERROR    No compute node with id "ssd41_2222"
+Traceback (most recent call last):
+  File "monitor.py", line 127, in message_handler
+    self.message_logic(message)
+  File "monitor.py", line 149, in message_logic
+    self.handle_deregister_compute_node(message_obj)
+  File "monitor.py", line 491, in handle_deregister_compute_node
+    self.compute_node_manager.remove_compute_node(compute_node_id)
+  File "monitor.py", line 655, in remove_compute_node
+    compute_node_obj = self.get_compute_node_by_id(compute_node_id)
+  File "monitor.py", line 643, in get_compute_node_by_id
+    raise Exception("No compute node with id \"%s\"" % id)
+Exception: No compute node with id "ssd41_2222"
+10-26 14:46 Monitor      DEBUG    Receive msg from ssd39_2222 type: DeRegisterComputeNode
+10-26 14:46 Monitor      ERROR    No compute node with id "ssd39_2222"
+Traceback (most recent call last):
+  File "monitor.py", line 127, in message_handler
+    self.message_logic(message)
+  File "monitor.py", line 149, in message_logic
+    self.handle_deregister_compute_node(message_obj)
+  File "monitor.py", line 491, in handle_deregister_compute_node
+    self.compute_node_manager.remove_compute_node(compute_node_id)
+  File "monitor.py", line 655, in remove_compute_node
+    compute_node_obj = self.get_compute_node_by_id(compute_node_id)
+  File "monitor.py", line 643, in get_compute_node_by_id
+    raise Exception("No compute node with id \"%s\"" % id)
+Exception: No compute node with id "ssd39_2222"
+10-26 14:46 Monitor      DEBUG    Receive msg from ssd28_2222 type: DeRegisterComputeNode
+10-26 14:46 Monitor      ERROR    No compute node with id "ssd28_2222"
+Traceback (most recent call last):
+  File "monitor.py", line 127, in message_handler
+    self.message_logic(message)
+  File "monitor.py", line 149, in message_logic
+    self.handle_deregister_compute_node(message_obj)
+  File "monitor.py", line 491, in handle_deregister_compute_node
+    self.compute_node_manager.remove_compute_node(compute_node_id)
+  File "monitor.py", line 655, in remove_compute_node
+    compute_node_obj = self.get_compute_node_by_id(compute_node_id)
+  File "monitor.py", line 643, in get_compute_node_by_id
+    raise Exception("No compute node with id \"%s\"" % id)
+Exception: No compute node with id "ssd28_2222"
+10-26 14:46 Monitor      DEBUG    Receive msg from ssd32_2222 type: DeRegisterComputeNode
+10-26 14:46 Monitor      ERROR    No compute node with id "ssd32_2222"
+Traceback (most recent call last):
+  File "monitor.py", line 127, in message_handler
+    self.message_logic(message)
+  File "monitor.py", line 149, in message_logic
+    self.handle_deregister_compute_node(message_obj)
+  File "monitor.py", line 491, in handle_deregister_compute_node
+    self.compute_node_manager.remove_compute_node(compute_node_id)
+  File "monitor.py", line 655, in remove_compute_node
+    compute_node_obj = self.get_compute_node_by_id(compute_node_id)
+  File "monitor.py", line 643, in get_compute_node_by_id
+    raise Exception("No compute node with id \"%s\"" % id)
+Exception: No compute node with id "ssd32_2222"
+10-26 14:46 Monitor      DEBUG    Receive msg from ssd36_2222 type: DeRegisterComputeNode
+10-26 14:46 Monitor      ERROR    No compute node with id "ssd36_2222"
+Traceback (most recent call last):
+  File "monitor.py", line 127, in message_handler
+    self.message_logic(message)
+  File "monitor.py", line 149, in message_logic
+    self.handle_deregister_compute_node(message_obj)
+  File "monitor.py", line 491, in handle_deregister_compute_node
+    self.compute_node_manager.remove_compute_node(compute_node_id)
+  File "monitor.py", line 655, in remove_compute_node
+    compute_node_obj = self.get_compute_node_by_id(compute_node_id)
+  File "monitor.py", line 643, in get_compute_node_by_id
+    raise Exception("No compute node with id \"%s\"" % id)
+Exception: No compute node with id "ssd36_2222"
+10-26 14:46 Monitor      DEBUG    Receive msg from ssd15_2222 type: DeRegisterComputeNode
+10-26 14:46 Monitor      ERROR    No compute node with id "ssd15_2222"
+Traceback (most recent call last):
+  File "monitor.py", line 127, in message_handler
+    self.message_logic(message)
+  File "monitor.py", line 149, in message_logic
+    self.handle_deregister_compute_node(message_obj)
+  File "monitor.py", line 491, in handle_deregister_compute_node
+    self.compute_node_manager.remove_compute_node(compute_node_id)
+  File "monitor.py", line 655, in remove_compute_node
+    compute_node_obj = self.get_compute_node_by_id(compute_node_id)
+  File "monitor.py", line 643, in get_compute_node_by_id
+    raise Exception("No compute node with id \"%s\"" % id)
+Exception: No compute node with id "ssd15_2222"
+10-26 14:46 Monitor      DEBUG    Receive msg from ssd08_2222 type: RegisterAgent
+10-26 14:46 ComputeNodeManager INFO     ssd08:2222 register as an agent
+10-26 14:46 Monitor      DEBUG    Receive msg from ssd23_2222 type: RegisterAgent
+10-26 14:46 ComputeNodeManager INFO     ssd23:2222 register as an agent
+10-26 14:46 Monitor      DEBUG    Receive msg from ssd15_2222 type: RegisterAgent
+10-26 14:46 ComputeNodeManager INFO     ssd15:2222 register as an agent
+10-26 14:46 Monitor      DEBUG    Receive msg from ssd21_2222 type: RegisterAgent
+10-26 14:46 ComputeNodeManager INFO     ssd21:2222 register as an agent
+10-26 14:46 Monitor      DEBUG    Receive msg from ssd13_2222 type: RegisterAgent
+10-26 14:46 ComputeNodeManager INFO     ssd13:2222 register as an agent
+10-26 14:46 Monitor      DEBUG    Receive msg from ssd22_2222 type: RegisterAgent
+10-26 14:46 ComputeNodeManager INFO     ssd22:2222 register as an agent
+10-26 14:46 Monitor      DEBUG    Receive msg from ssd24_2222 type: RegisterAgent
+10-26 14:46 ComputeNodeManager INFO     ssd24:2222 register as an agent
+10-26 14:46 Monitor      DEBUG    Receive msg from ssd11_2222 type: RegisterAgent
+10-26 14:46 ComputeNodeManager INFO     ssd11:2222 register as an agent
+10-26 14:46 Monitor      DEBUG    Receive msg from ssd18_2222 type: RegisterAgent
+10-26 14:46 ComputeNodeManager INFO     ssd18:2222 register as an agent
+10-26 14:46 Monitor      DEBUG    Receive msg from ssd19_2222 type: RegisterAgent
+10-26 14:46 ComputeNodeManager INFO     ssd19:2222 register as an agent
+10-26 14:46 Monitor      DEBUG    Receive msg from ssd07_2222 type: RegisterAgent
+10-26 14:46 ComputeNodeManager INFO     ssd07:2222 register as an agent
+10-26 14:46 Monitor      DEBUG    Receive msg from ssd09_2222 type: RegisterAgent
+10-26 14:46 ComputeNodeManager INFO     ssd09:2222 register as an agent
+10-26 14:46 Monitor      DEBUG    Receive msg from ssd27_2222 type: RegisterAgent
+10-26 14:46 ComputeNodeManager INFO     ssd27:2222 register as an agent
+10-26 14:46 Monitor      DEBUG    Receive msg from ssd37_2222 type: RegisterAgent
+10-26 14:46 ComputeNodeManager INFO     ssd37:2222 register as an agent
+10-26 14:46 Monitor      DEBUG    Receive msg from ssd20_2222 type: RegisterAgent
+10-26 14:46 ComputeNodeManager INFO     ssd20:2222 register as an agent
+10-26 14:46 Monitor      DEBUG    Receive msg from ssd12_2222 type: RegisterAgent
+10-26 14:46 ComputeNodeManager INFO     ssd12:2222 register as an agent
+10-26 14:46 Monitor      DEBUG    Receive msg from ssd25_2222 type: RegisterAgent
+10-26 14:46 ComputeNodeManager INFO     ssd25:2222 register as an agent
+10-26 14:46 Monitor      DEBUG    Receive msg from ssd26_2222 type: RegisterAgent
+10-26 14:46 ComputeNodeManager INFO     ssd26:2222 register as an agent
+10-26 14:46 Monitor      DEBUG    Receive msg from ssd16_2222 type: RegisterAgent
+10-26 14:46 ComputeNodeManager INFO     ssd16:2222 register as an agent
+10-26 14:46 Monitor      DEBUG    Receive msg from ssd14_2222 type: RegisterAgent
+10-26 14:46 ComputeNodeManager INFO     ssd14:2222 register as an agent
+10-26 14:46 Monitor      DEBUG    Receive msg from ssd17_2222 type: RegisterAgent
+10-26 14:46 ComputeNodeManager INFO     ssd17:2222 register as an agent
+10-26 14:46 Monitor      DEBUG    Receive msg from ssd38_2222 type: RegisterAgent
+10-26 14:46 ComputeNodeManager INFO     ssd38:2222 register as an agent
+10-26 14:46 Monitor      DEBUG    Receive msg from ssd28_2222 type: RegisterAgent
+10-26 14:46 ComputeNodeManager INFO     ssd28:2222 register as an agent
+10-26 14:46 Monitor      DEBUG    Receive msg from ssd10_2222 type: RegisterAgent
+10-26 14:46 ComputeNodeManager INFO     ssd10:2222 register as an agent
+10-26 14:46 Monitor      DEBUG    Receive msg from ssd33_2222 type: RegisterAgent
+10-26 14:46 ComputeNodeManager INFO     ssd33:2222 register as an agent
+10-26 14:46 Monitor      DEBUG    Receive msg from ssd31_2222 type: RegisterAgent
+10-26 14:46 ComputeNodeManager INFO     ssd31:2222 register as an agent
+10-26 14:46 Monitor      DEBUG    Receive msg from ssd29_2222 type: RegisterAgent
+10-26 14:46 ComputeNodeManager INFO     ssd29:2222 register as an agent
+10-26 14:46 Monitor      DEBUG    Receive msg from ssd32_2222 type: RegisterAgent
+10-26 14:46 ComputeNodeManager INFO     ssd32:2222 register as an agent
+10-26 14:46 Monitor      DEBUG    Receive msg from ssd35_2222 type: RegisterAgent
+10-26 14:46 ComputeNodeManager INFO     ssd35:2222 register as an agent
+10-26 14:46 Monitor      DEBUG    Receive msg from ssd30_2222 type: RegisterAgent
+10-26 14:46 ComputeNodeManager INFO     ssd30:2222 register as an agent
+10-26 14:46 Monitor      DEBUG    Receive msg from ssd41_2222 type: RegisterAgent
+10-26 14:46 ComputeNodeManager INFO     ssd41:2222 register as an agent
+10-26 14:46 Monitor      DEBUG    Receive msg from ssd40_2222 type: RegisterAgent
+10-26 14:46 ComputeNodeManager INFO     ssd40:2222 register as an agent
+10-26 14:46 Monitor      DEBUG    Receive msg from ssd42_2222 type: RegisterAgent
+10-26 14:46 ComputeNodeManager INFO     ssd42:2222 register as an agent
+10-26 14:46 Monitor      DEBUG    Receive msg from ssd39_2222 type: RegisterAgent
+10-26 14:46 ComputeNodeManager INFO     ssd39:2222 register as an agent
+10-26 14:46 Monitor      DEBUG    Receive msg from ssd34_2222 type: RegisterAgent
+10-26 14:46 ComputeNodeManager INFO     ssd34:2222 register as an agent
+10-26 14:46 Monitor      DEBUG    Receive msg from ssd36_2222 type: RegisterAgent
+10-26 14:46 ComputeNodeManager INFO     ssd36:2222 register as an agent
+10-26 14:46 Monitor      DEBUG    Receive msg from client_5c1da880-ba19-11e7-a0bf-1866da5fdbef type: StartJob
+10-26 14:46 root         DEBUG    Generated LHS conf list: [{"ps_num": 18, "worker_num": 18, "inter_op_parallelism_threads": 8, "intra_op_parallelism_threads": 8}, {"ps_num": 6, "worker_num": 30, "inter_op_parallelism_threads": 3, "intra_op_parallelism_threads": 13}, {"ps_num": 30, "worker_num": 6, "inter_op_parallelism_threads": 13, "intra_op_parallelism_threads": 3}] 
+10-26 14:46 queue        INFO     Send message from 'monitor' to 'ssd08_2222' type: StartProcess
+10-26 14:46 amqp         DEBUG    Start from server, version: 0.9, properties: {'information': 'Licensed under the MPL.  See http://www.rabbitmq.com/', 'product': 'RabbitMQ', 'copyright': 'Copyright (C) 2007-2014 GoPivotal, Inc.', 'capabilities': {'exchange_exchange_bindings': True, 'connection.blocked': True, 'authentication_failure_close': True, 'basic.nack': True, 'per_consumer_qos': True, 'consumer_priorities': True, 'consumer_cancel_notify': True, 'publisher_confirms': True}, 'cluster_name': 'rabbit@ssd02.dbg.private', 'platform': 'Erlang/OTP', 'version': '3.3.5'}, mechanisms: ['AMQPLAIN', 'PLAIN'], locales: [u'en_US']
+10-26 14:46 amqp         DEBUG    using channel_id: 1
+10-26 14:46 amqp         DEBUG    Channel open
+10-26 14:46 queue        INFO     Send message from 'monitor' to 'ssd23_2222' type: StartProcess
+10-26 14:46 queue        INFO     Send message from 'monitor' to 'ssd15_2222' type: StartProcess
+10-26 14:46 queue        INFO     Send message from 'monitor' to 'ssd21_2222' type: StartProcess
+10-26 14:46 queue        INFO     Send message from 'monitor' to 'ssd13_2222' type: StartProcess
+10-26 14:46 queue        INFO     Send message from 'monitor' to 'ssd22_2222' type: StartProcess
+10-26 14:46 queue        INFO     Send message from 'monitor' to 'ssd24_2222' type: StartProcess
+10-26 14:46 queue        INFO     Send message from 'monitor' to 'ssd11_2222' type: StartProcess
+10-26 14:46 queue        INFO     Send message from 'monitor' to 'ssd18_2222' type: StartProcess
+10-26 14:46 queue        INFO     Send message from 'monitor' to 'ssd19_2222' type: StartProcess
+10-26 14:46 queue        INFO     Send message from 'monitor' to 'ssd07_2222' type: StartProcess
+10-26 14:46 queue        INFO     Send message from 'monitor' to 'ssd09_2222' type: StartProcess
+10-26 14:46 queue        INFO     Send message from 'monitor' to 'ssd27_2222' type: StartProcess
+10-26 14:46 queue        INFO     Send message from 'monitor' to 'ssd37_2222' type: StartProcess
+10-26 14:46 queue        INFO     Send message from 'monitor' to 'ssd20_2222' type: StartProcess
+10-26 14:46 queue        INFO     Send message from 'monitor' to 'ssd12_2222' type: StartProcess
+10-26 14:46 queue        INFO     Send message from 'monitor' to 'ssd25_2222' type: StartProcess
+10-26 14:46 queue        INFO     Send message from 'monitor' to 'ssd26_2222' type: StartProcess
+10-26 14:46 queue        INFO     Send message from 'monitor' to 'ssd16_2222' type: StartProcess
+10-26 14:46 queue        INFO     Send message from 'monitor' to 'ssd14_2222' type: StartProcess
+10-26 14:46 queue        INFO     Send message from 'monitor' to 'ssd17_2222' type: StartProcess
+10-26 14:46 queue        INFO     Send message from 'monitor' to 'ssd38_2222' type: StartProcess
+10-26 14:46 queue        INFO     Send message from 'monitor' to 'ssd28_2222' type: StartProcess
+10-26 14:46 queue        INFO     Send message from 'monitor' to 'ssd10_2222' type: StartProcess
+10-26 14:46 queue        INFO     Send message from 'monitor' to 'ssd33_2222' type: StartProcess
+10-26 14:46 queue        INFO     Send message from 'monitor' to 'ssd31_2222' type: StartProcess
+10-26 14:46 queue        INFO     Send message from 'monitor' to 'ssd29_2222' type: StartProcess
+10-26 14:46 queue        INFO     Send message from 'monitor' to 'ssd32_2222' type: StartProcess
+10-26 14:46 queue        INFO     Send message from 'monitor' to 'ssd35_2222' type: StartProcess
+10-26 14:46 queue        INFO     Send message from 'monitor' to 'ssd30_2222' type: StartProcess
+10-26 14:46 queue        INFO     Send message from 'monitor' to 'ssd41_2222' type: StartProcess
+10-26 14:46 queue        INFO     Send message from 'monitor' to 'ssd40_2222' type: StartProcess
+10-26 14:46 queue        INFO     Send message from 'monitor' to 'ssd42_2222' type: StartProcess
+10-26 14:46 queue        INFO     Send message from 'monitor' to 'ssd39_2222' type: StartProcess
+10-26 14:46 queue        INFO     Send message from 'monitor' to 'ssd34_2222' type: StartProcess
+10-26 14:46 queue        INFO     Send message from 'monitor' to 'ssd36_2222' type: StartProcess
+10-26 14:46 queue        INFO     Send message from 'monitor' to 'client_5c1da880-ba19-11e7-a0bf-1866da5fdbef' type: ReplyStartJob
+10-26 14:46 Monitor      DEBUG    Receive msg from ssd36_2222 type: SendRecoveryTime
+10-26 14:46 Monitor      DEBUG    Receive msg from ssd40_2222 type: UpdateNumOfSteps
+10-26 14:46 Monitor      DEBUG    Last global step: 0, update step: 1
+10-26 14:46 Monitor      DEBUG    Receive msg from ssd36_2222 type: UpdateNumOfSteps
+10-26 14:46 Monitor      DEBUG    Last global step: 1, update step: 1
+10-26 14:46 Monitor      DEBUG    Receive msg from ssd42_2222 type: UpdateNumOfSteps
+10-26 14:46 Monitor      DEBUG    Last global step: 1, update step: 1
+10-26 14:46 Monitor      DEBUG    Receive msg from ssd39_2222 type: UpdateNumOfSteps
+10-26 14:46 Monitor      DEBUG    Last global step: 1, update step: 1
+10-26 14:46 Monitor      DEBUG    Receive msg from ssd41_2222 type: UpdateNumOfSteps
+10-26 14:46 Monitor      DEBUG    Last global step: 1, update step: 2
+10-26 14:46 Monitor      DEBUG    Receive msg from ssd34_2222 type: UpdateNumOfSteps
+10-26 14:46 Monitor      DEBUG    Last global step: 2, update step: 2
+10-26 14:46 Monitor      DEBUG    Receive msg from ssd40_2222 type: UpdateNumOfSteps
+10-26 14:46 Monitor      DEBUG    Last global step: 2, update step: 7
+10-26 14:46 Monitor      DEBUG    Receive msg from ssd36_2222 type: UpdateNumOfSteps
+10-26 14:46 Monitor      DEBUG    Last global step: 7, update step: 8
+10-26 14:46 Monitor      DEBUG    Receive msg from ssd42_2222 type: UpdateNumOfSteps
+10-26 14:46 Monitor      DEBUG    Last global step: 8, update step: 8
+10-26 14:46 Monitor      DEBUG    Receive msg from ssd39_2222 type: UpdateNumOfSteps
+10-26 14:46 Monitor      DEBUG    Last global step: 8, update step: 8
+10-26 14:46 Monitor      DEBUG    Receive msg from ssd41_2222 type: UpdateNumOfSteps
+10-26 14:46 Monitor      DEBUG    Last global step: 8, update step: 8
+10-26 14:46 Monitor      DEBUG    Receive msg from ssd34_2222 type: UpdateNumOfSteps
+10-26 14:46 Monitor      DEBUG    Last global step: 8, update step: 8
+10-26 14:46 Monitor      DEBUG    Receive msg from ssd40_2222 type: UpdateNumOfSteps
+10-26 14:46 Monitor      DEBUG    Last global step: 8, update step: 13
+10-26 14:46 Monitor      DEBUG    Receive msg from ssd36_2222 type: UpdateNumOfSteps
+10-26 14:46 Monitor      DEBUG    Last global step: 13, update step: 14
+10-26 14:46 Monitor      DEBUG    Receive msg from ssd39_2222 type: UpdateNumOfSteps
+10-26 14:46 Monitor      DEBUG    Last global step: 14, update step: 14
+10-26 14:46 Monitor      DEBUG    Receive msg from ssd42_2222 type: UpdateNumOfSteps
+10-26 14:46 Monitor      DEBUG    Last global step: 14, update step: 14
+10-26 14:46 Monitor      DEBUG    Receive msg from ssd41_2222 type: UpdateNumOfSteps
+10-26 14:46 Monitor      DEBUG    Last global step: 14, update step: 15
+10-26 14:46 Monitor      DEBUG    Receive msg from ssd34_2222 type: UpdateNumOfSteps
+10-26 14:46 Monitor      DEBUG    Last global step: 15, update step: 15
+10-26 14:46 Monitor      DEBUG    Receive msg from ssd40_2222 type: UpdateNumOfSteps
+10-26 14:46 Monitor      DEBUG    Last global step: 15, update step: 19
+10-26 14:46 Monitor      DEBUG    Receive msg from ssd39_2222 type: UpdateNumOfSteps
+10-26 14:46 Monitor      DEBUG    Last global step: 19, update step: 20
+10-26 14:46 Monitor      DEBUG    Receive msg from ssd36_2222 type: UpdateNumOfSteps
+10-26 14:46 Monitor      DEBUG    Last global step: 20, update step: 20
+10-26 14:46 Monitor      DEBUG    Receive msg from ssd42_2222 type: UpdateNumOfSteps
+10-26 14:46 Monitor      DEBUG    Last global step: 20, update step: 20
+10-26 14:46 Monitor      DEBUG    Receive msg from ssd34_2222 type: UpdateNumOfSteps
+10-26 14:46 Monitor      DEBUG    Last global step: 20, update step: 20
+10-26 14:46 Monitor      DEBUG    Receive msg from ssd41_2222 type: UpdateNumOfSteps
+10-26 14:46 Monitor      DEBUG    Last global step: 20, update step: 20
+10-26 14:46 Monitor      DEBUG    Receive msg from ssd40_2222 type: UpdateNumOfSteps
+10-26 14:46 Monitor      DEBUG    Last global step: 20, update step: 25
+10-26 14:46 Monitor      DEBUG    Receive msg from ssd39_2222 type: UpdateNumOfSteps
+10-26 14:46 Monitor      DEBUG    Last global step: 25, update step: 26
+10-26 14:46 Monitor      DEBUG    Receive msg from ssd41_2222 type: UpdateNumOfSteps
+10-26 14:46 Monitor      DEBUG    Last global step: 26, update step: 27
+10-26 14:46 Monitor      DEBUG    Receive msg from ssd42_2222 type: UpdateNumOfSteps
+10-26 14:46 Monitor      DEBUG    Last global step: 27, update step: 27
+10-26 14:46 Monitor      DEBUG    Receive msg from ssd34_2222 type: UpdateNumOfSteps
+10-26 14:46 Monitor      DEBUG    Last global step: 27, update step: 27
+10-26 14:46 Monitor      DEBUG    Receive msg from ssd36_2222 type: UpdateNumOfSteps
+10-26 14:46 Monitor      DEBUG    Last global step: 27, update step: 27
+10-26 14:46 Monitor      DEBUG    Receive msg from ssd40_2222 type: UpdateNumOfSteps
+10-26 14:46 Monitor      DEBUG    Last global step: 27, update step: 28
+10-26 14:46 Monitor      DEBUG    Receive msg from ssd39_2222 type: UpdateNumOfSteps
+10-26 14:46 Monitor      DEBUG    Last global step: 28, update step: 32
+10-26 14:46 Monitor      DEBUG    Receive msg from ssd41_2222 type: UpdateNumOfSteps
+10-26 14:46 Monitor      DEBUG    Last global step: 32, update step: 33
+10-26 14:46 Monitor      DEBUG    Receive msg from ssd34_2222 type: UpdateNumOfSteps
+10-26 14:46 Monitor      DEBUG    Last global step: 33, update step: 33
+10-26 14:46 Monitor      DEBUG    Receive msg from ssd42_2222 type: UpdateNumOfSteps
+10-26 14:46 Monitor      DEBUG    Last global step: 33, update step: 33
+10-26 14:46 Monitor      DEBUG    Receive msg from ssd40_2222 type: UpdateNumOfSteps
+10-26 14:46 Monitor      DEBUG    Last global step: 33, update step: 35
+10-26 14:46 Monitor      DEBUG    Receive msg from ssd36_2222 type: UpdateNumOfSteps
+10-26 14:46 Monitor      DEBUG    Last global step: 35, update step: 34
+10-26 14:46 Monitor      DEBUG    Receive msg from ssd39_2222 type: UpdateNumOfSteps
+10-26 14:46 Monitor      DEBUG    Last global step: 35, update step: 38
+10-26 14:46 Monitor      DEBUG    Receive msg from ssd41_2222 type: UpdateNumOfSteps
+10-26 14:46 Monitor      DEBUG    Last global step: 38, update step: 39
+10-26 14:46 Monitor      DEBUG    Receive msg from ssd34_2222 type: UpdateNumOfSteps
+10-26 14:46 Monitor      DEBUG    Last global step: 39, update step: 39
+10-26 14:46 Monitor      DEBUG    Receive msg from ssd42_2222 type: UpdateNumOfSteps
+10-26 14:46 Monitor      DEBUG    Last global step: 39, update step: 40
+10-26 14:46 Monitor      DEBUG    Receive msg from ssd40_2222 type: UpdateNumOfSteps
+10-26 14:46 Monitor      DEBUG    Last global step: 40, update step: 42
+10-26 14:46 Monitor      DEBUG    Receive msg from ssd36_2222 type: UpdateNumOfSteps
+10-26 14:46 Monitor      DEBUG    Last global step: 42, update step: 42
+10-26 14:46 Monitor      DEBUG    Receive msg from ssd39_2222 type: UpdateNumOfSteps
+10-26 14:46 Monitor      DEBUG    Last global step: 42, update step: 44
+10-26 14:46 Monitor      DEBUG    Receive msg from ssd41_2222 type: UpdateNumOfSteps
+10-26 14:46 Monitor      DEBUG    Last global step: 44, update step: 45
+10-26 14:46 Monitor      DEBUG    Receive msg from ssd34_2222 type: UpdateNumOfSteps
+10-26 14:46 Monitor      DEBUG    Last global step: 45, update step: 45
+10-26 14:46 Monitor      DEBUG    Receive msg from ssd42_2222 type: UpdateNumOfSteps
+10-26 14:46 Monitor      DEBUG    Last global step: 45, update step: 46
+10-26 14:46 Monitor      DEBUG    Receive msg from ssd40_2222 type: UpdateNumOfSteps
+10-26 14:46 Monitor      DEBUG    Last global step: 46, update step: 48
+10-26 14:46 Monitor      DEBUG    Receive msg from ssd36_2222 type: UpdateNumOfSteps
+10-26 14:46 Monitor      DEBUG    Last global step: 48, update step: 49
+10-26 14:46 Monitor      DEBUG    Receive msg from ssd39_2222 type: UpdateNumOfSteps
+10-26 14:46 Monitor      DEBUG    Last global step: 49, update step: 49
+10-26 14:46 Monitor      DEBUG    Receive msg from ssd41_2222 type: UpdateNumOfSteps
+10-26 14:46 Monitor      DEBUG    Last global step: 49, update step: 51
+10-26 14:46 Monitor      DEBUG    Receive msg from ssd34_2222 type: UpdateNumOfSteps
+10-26 14:46 Monitor      DEBUG    Last global step: 51, update step: 52
+10-26 14:46 Monitor      DEBUG    Receive msg from ssd42_2222 type: UpdateNumOfSteps
+10-26 14:46 Monitor      DEBUG    Last global step: 52, update step: 52
+10-26 14:46 Monitor      DEBUG    Receive msg from ssd40_2222 type: UpdateNumOfSteps
+10-26 14:46 Monitor      DEBUG    Last global step: 52, update step: 52
+10-26 14:46 Monitor      DEBUG    Receive msg from ssd39_2222 type: UpdateNumOfSteps
+10-26 14:46 Monitor      DEBUG    Last global step: 52, update step: 55
+10-26 14:46 Monitor      DEBUG    Receive msg from ssd36_2222 type: UpdateNumOfSteps
+10-26 14:46 Monitor      DEBUG    Last global step: 55, update step: 55
+10-26 14:46 Monitor      DEBUG    Receive msg from ssd41_2222 type: UpdateNumOfSteps
+10-26 14:46 Monitor      DEBUG    Last global step: 55, update step: 57
+10-26 14:46 Monitor      DEBUG    Receive msg from ssd34_2222 type: UpdateNumOfSteps
+10-26 14:46 Monitor      DEBUG    Last global step: 57, update step: 58
+10-26 14:46 Monitor      DEBUG    Receive msg from ssd42_2222 type: UpdateNumOfSteps
+10-26 14:46 Monitor      DEBUG    Last global step: 58, update step: 58
+10-26 14:46 Monitor      DEBUG    Receive msg from ssd40_2222 type: UpdateNumOfSteps
+10-26 14:46 Monitor      DEBUG    Last global step: 58, update step: 59
+10-26 14:46 Monitor      DEBUG    Receive msg from ssd39_2222 type: UpdateNumOfSteps
+10-26 14:46 Monitor      DEBUG    Last global step: 59, update step: 61
+10-26 14:46 Monitor      DEBUG    Receive msg from ssd36_2222 type: UpdateNumOfSteps
+10-26 14:46 Monitor      DEBUG    Last global step: 61, update step: 61
+10-26 14:46 Monitor      DEBUG    Receive msg from ssd39_2222 type: FinishProcess
+10-26 14:46 root         DEBUG    ssd12_2222 is not finish
+10-26 14:46 root         DEBUG    ssd38_2222 is not finish
+10-26 14:46 root         DEBUG    ssd09_2222 is not finish
+10-26 14:46 root         DEBUG    ssd14_2222 is not finish
+10-26 14:46 root         DEBUG    ssd31_2222 is not finish
+10-26 14:46 root         DEBUG    ssd23_2222 is not finish
+10-26 14:46 root         DEBUG    ssd15_2222 is not finish
+10-26 14:46 root         DEBUG    ssd40_2222 is not finish
+10-26 14:46 root         DEBUG    ssd42_2222 is not finish
+10-26 14:46 root         DEBUG    ssd35_2222 is not finish
+10-26 14:46 root         DEBUG    ssd24_2222 is not finish
+10-26 14:46 root         DEBUG    ssd33_2222 is not finish
+10-26 14:46 root         DEBUG    ssd19_2222 is not finish
+10-26 14:46 root         DEBUG    ssd27_2222 is not finish
+10-26 14:46 root         DEBUG    ssd16_2222 is not finish
+10-26 14:46 root         DEBUG    ssd10_2222 is not finish
+10-26 14:46 root         DEBUG    ssd32_2222 is not finish
+10-26 14:46 root         DEBUG    ssd25_2222 is not finish
+10-26 14:46 root         DEBUG    ssd11_2222 is not finish
+10-26 14:46 root         DEBUG    ssd21_2222 is not finish
+10-26 14:46 root         DEBUG    ssd13_2222 is not finish
+10-26 14:46 root         DEBUG    ssd34_2222 is not finish
+10-26 14:46 root         DEBUG    ssd22_2222 is not finish
+10-26 14:46 root         DEBUG    ssd30_2222 is not finish
+10-26 14:46 root         DEBUG    ssd17_2222 is not finish
+10-26 14:46 root         DEBUG    ssd41_2222 is not finish
+10-26 14:46 root         DEBUG    ssd26_2222 is not finish
+10-26 14:46 root         DEBUG    ssd37_2222 is not finish
+10-26 14:46 root         DEBUG    ssd20_2222 is not finish
+10-26 14:46 root         DEBUG    ssd07_2222 is not finish
+10-26 14:46 root         DEBUG    ssd36_2222 is not finish
+10-26 14:46 root         DEBUG    ssd28_2222 is not finish
+10-26 14:46 root         DEBUG    ssd18_2222 is not finish
+10-26 14:46 root         DEBUG    ssd08_2222 is not finish
+10-26 14:46 root         DEBUG    ssd29_2222 is not finish
+10-26 14:46 Monitor      DEBUG    Receive msg from ssd41_2222 type: UpdateNumOfSteps
+10-26 14:46 Monitor      DEBUG    Last global step: 61, update step: 63
+10-26 14:46 Monitor      DEBUG    Receive msg from ssd41_2222 type: FinishProcess
+10-26 14:46 root         DEBUG    ssd12_2222 is not finish
+10-26 14:46 root         DEBUG    ssd38_2222 is not finish
+10-26 14:46 root         DEBUG    ssd09_2222 is not finish
+10-26 14:46 root         DEBUG    ssd14_2222 is not finish
+10-26 14:46 root         DEBUG    ssd31_2222 is not finish
+10-26 14:46 root         DEBUG    ssd23_2222 is not finish
+10-26 14:46 root         DEBUG    ssd15_2222 is not finish
+10-26 14:46 root         DEBUG    ssd40_2222 is not finish
+10-26 14:46 root         DEBUG    ssd42_2222 is not finish
+10-26 14:46 root         DEBUG    ssd35_2222 is not finish
+10-26 14:46 root         DEBUG    ssd24_2222 is not finish
+10-26 14:46 root         DEBUG    ssd33_2222 is not finish
+10-26 14:46 root         DEBUG    ssd19_2222 is not finish
+10-26 14:46 root         DEBUG    ssd27_2222 is not finish
+10-26 14:46 root         DEBUG    ssd16_2222 is not finish
+10-26 14:46 root         DEBUG    ssd10_2222 is not finish
+10-26 14:46 root         DEBUG    ssd32_2222 is not finish
+10-26 14:46 root         DEBUG    ssd25_2222 is not finish
+10-26 14:46 root         DEBUG    ssd11_2222 is not finish
+10-26 14:46 root         DEBUG    ssd21_2222 is not finish
+10-26 14:46 root         DEBUG    ssd13_2222 is not finish
+10-26 14:46 root         DEBUG    ssd34_2222 is not finish
+10-26 14:46 root         DEBUG    ssd22_2222 is not finish
+10-26 14:46 root         DEBUG    ssd30_2222 is not finish
+10-26 14:46 root         DEBUG    ssd17_2222 is not finish
+10-26 14:46 root         DEBUG    ssd26_2222 is not finish
+10-26 14:46 root         DEBUG    ssd37_2222 is not finish
+10-26 14:46 root         DEBUG    ssd20_2222 is not finish
+10-26 14:46 root         DEBUG    ssd07_2222 is not finish
+10-26 14:46 root         DEBUG    ssd36_2222 is not finish
+10-26 14:46 root         DEBUG    ssd28_2222 is not finish
+10-26 14:46 root         DEBUG    ssd18_2222 is not finish
+10-26 14:46 root         DEBUG    ssd08_2222 is not finish
+10-26 14:46 root         DEBUG    ssd29_2222 is not finish
+10-26 14:46 Monitor      DEBUG    Receive msg from ssd34_2222 type: UpdateNumOfSteps
+10-26 14:46 Monitor      DEBUG    Last global step: 63, update step: 64
+10-26 14:46 Monitor      DEBUG    Receive msg from ssd40_2222 type: UpdateNumOfSteps
+10-26 14:46 Monitor      DEBUG    Last global step: 64, update step: 64
+10-26 14:46 Monitor      DEBUG    Receive msg from ssd34_2222 type: FinishProcess
+10-26 14:46 root         DEBUG    ssd12_2222 is not finish
+10-26 14:46 root         DEBUG    ssd38_2222 is not finish
+10-26 14:46 root         DEBUG    ssd09_2222 is not finish
+10-26 14:46 root         DEBUG    ssd14_2222 is not finish
+10-26 14:46 root         DEBUG    ssd31_2222 is not finish
+10-26 14:46 root         DEBUG    ssd23_2222 is not finish
+10-26 14:46 root         DEBUG    ssd15_2222 is not finish
+10-26 14:46 root         DEBUG    ssd40_2222 is not finish
+10-26 14:46 root         DEBUG    ssd42_2222 is not finish
+10-26 14:46 root         DEBUG    ssd35_2222 is not finish
+10-26 14:46 root         DEBUG    ssd24_2222 is not finish
+10-26 14:46 root         DEBUG    ssd33_2222 is not finish
+10-26 14:46 root         DEBUG    ssd19_2222 is not finish
+10-26 14:46 root         DEBUG    ssd27_2222 is not finish
+10-26 14:46 root         DEBUG    ssd16_2222 is not finish
+10-26 14:46 root         DEBUG    ssd10_2222 is not finish
+10-26 14:46 root         DEBUG    ssd32_2222 is not finish
+10-26 14:46 root         DEBUG    ssd25_2222 is not finish
+10-26 14:46 root         DEBUG    ssd11_2222 is not finish
+10-26 14:46 root         DEBUG    ssd21_2222 is not finish
+10-26 14:46 root         DEBUG    ssd13_2222 is not finish
+10-26 14:46 root         DEBUG    ssd22_2222 is not finish
+10-26 14:46 root         DEBUG    ssd30_2222 is not finish
+10-26 14:46 root         DEBUG    ssd17_2222 is not finish
+10-26 14:46 root         DEBUG    ssd26_2222 is not finish
+10-26 14:46 root         DEBUG    ssd37_2222 is not finish
+10-26 14:46 root         DEBUG    ssd20_2222 is not finish
+10-26 14:46 root         DEBUG    ssd07_2222 is not finish
+10-26 14:46 root         DEBUG    ssd36_2222 is not finish
+10-26 14:46 root         DEBUG    ssd28_2222 is not finish
+10-26 14:46 root         DEBUG    ssd18_2222 is not finish
+10-26 14:46 root         DEBUG    ssd08_2222 is not finish
+10-26 14:46 root         DEBUG    ssd29_2222 is not finish
+10-26 14:46 Monitor      DEBUG    Receive msg from ssd42_2222 type: UpdateNumOfSteps
+10-26 14:46 Monitor      DEBUG    Last global step: 64, update step: 64
+10-26 14:46 Monitor      DEBUG    Receive msg from ssd40_2222 type: FinishProcess
+10-26 14:46 root         DEBUG    ssd12_2222 is not finish
+10-26 14:46 root         DEBUG    ssd38_2222 is not finish
+10-26 14:46 root         DEBUG    ssd09_2222 is not finish
+10-26 14:46 root         DEBUG    ssd14_2222 is not finish
+10-26 14:46 root         DEBUG    ssd31_2222 is not finish
+10-26 14:46 root         DEBUG    ssd23_2222 is not finish
+10-26 14:46 root         DEBUG    ssd15_2222 is not finish
+10-26 14:46 root         DEBUG    ssd42_2222 is not finish
+10-26 14:46 root         DEBUG    ssd35_2222 is not finish
+10-26 14:46 root         DEBUG    ssd24_2222 is not finish
+10-26 14:46 root         DEBUG    ssd33_2222 is not finish
+10-26 14:46 root         DEBUG    ssd19_2222 is not finish
+10-26 14:46 root         DEBUG    ssd27_2222 is not finish
+10-26 14:46 root         DEBUG    ssd16_2222 is not finish
+10-26 14:46 root         DEBUG    ssd10_2222 is not finish
+10-26 14:46 root         DEBUG    ssd32_2222 is not finish
+10-26 14:46 root         DEBUG    ssd25_2222 is not finish
+10-26 14:46 root         DEBUG    ssd11_2222 is not finish
+10-26 14:46 root         DEBUG    ssd21_2222 is not finish
+10-26 14:46 root         DEBUG    ssd13_2222 is not finish
+10-26 14:46 root         DEBUG    ssd22_2222 is not finish
+10-26 14:46 root         DEBUG    ssd30_2222 is not finish
+10-26 14:46 root         DEBUG    ssd17_2222 is not finish
+10-26 14:46 root         DEBUG    ssd26_2222 is not finish
+10-26 14:46 root         DEBUG    ssd37_2222 is not finish
+10-26 14:46 root         DEBUG    ssd20_2222 is not finish
+10-26 14:46 root         DEBUG    ssd07_2222 is not finish
+10-26 14:46 root         DEBUG    ssd36_2222 is not finish
+10-26 14:46 root         DEBUG    ssd28_2222 is not finish
+10-26 14:46 root         DEBUG    ssd18_2222 is not finish
+10-26 14:46 root         DEBUG    ssd08_2222 is not finish
+10-26 14:46 root         DEBUG    ssd29_2222 is not finish
+10-26 14:46 Monitor      DEBUG    Receive msg from ssd42_2222 type: FinishProcess
+10-26 14:46 root         DEBUG    ssd12_2222 is not finish
+10-26 14:46 root         DEBUG    ssd38_2222 is not finish
+10-26 14:46 root         DEBUG    ssd09_2222 is not finish
+10-26 14:46 root         DEBUG    ssd14_2222 is not finish
+10-26 14:46 root         DEBUG    ssd31_2222 is not finish
+10-26 14:46 root         DEBUG    ssd23_2222 is not finish
+10-26 14:46 root         DEBUG    ssd15_2222 is not finish
+10-26 14:46 root         DEBUG    ssd35_2222 is not finish
+10-26 14:46 root         DEBUG    ssd24_2222 is not finish
+10-26 14:46 root         DEBUG    ssd33_2222 is not finish
+10-26 14:46 root         DEBUG    ssd19_2222 is not finish
+10-26 14:46 root         DEBUG    ssd27_2222 is not finish
+10-26 14:46 root         DEBUG    ssd16_2222 is not finish
+10-26 14:46 root         DEBUG    ssd10_2222 is not finish
+10-26 14:46 root         DEBUG    ssd32_2222 is not finish
+10-26 14:46 root         DEBUG    ssd25_2222 is not finish
+10-26 14:46 root         DEBUG    ssd11_2222 is not finish
+10-26 14:46 root         DEBUG    ssd21_2222 is not finish
+10-26 14:46 root         DEBUG    ssd13_2222 is not finish
+10-26 14:46 root         DEBUG    ssd22_2222 is not finish
+10-26 14:46 root         DEBUG    ssd30_2222 is not finish
+10-26 14:46 root         DEBUG    ssd17_2222 is not finish
+10-26 14:46 root         DEBUG    ssd26_2222 is not finish
+10-26 14:46 root         DEBUG    ssd37_2222 is not finish
+10-26 14:46 root         DEBUG    ssd20_2222 is not finish
+10-26 14:46 root         DEBUG    ssd07_2222 is not finish
+10-26 14:46 root         DEBUG    ssd36_2222 is not finish
+10-26 14:46 root         DEBUG    ssd28_2222 is not finish
+10-26 14:46 root         DEBUG    ssd18_2222 is not finish
+10-26 14:46 root         DEBUG    ssd08_2222 is not finish
+10-26 14:46 root         DEBUG    ssd29_2222 is not finish
+10-26 14:46 Monitor      DEBUG    Receive msg from ssd36_2222 type: FinishProcess
+10-26 14:46 Monitor      DEBUG    Kill PS: ssd12_2222
+10-26 14:46 queue        INFO     Send message from 'monitor' to 'ssd12_2222' type: KillProcessByJobId
+10-26 14:46 Monitor      DEBUG    Kill PS: ssd38_2222
+10-26 14:46 queue        INFO     Send message from 'monitor' to 'ssd38_2222' type: KillProcessByJobId
+10-26 14:46 Monitor      DEBUG    Kill PS: ssd09_2222
+10-26 14:46 queue        INFO     Send message from 'monitor' to 'ssd09_2222' type: KillProcessByJobId
+10-26 14:46 Monitor      DEBUG    Kill PS: ssd14_2222
+10-26 14:46 queue        INFO     Send message from 'monitor' to 'ssd14_2222' type: KillProcessByJobId
+10-26 14:46 Monitor      DEBUG    Kill PS: ssd31_2222
+10-26 14:46 queue        INFO     Send message from 'monitor' to 'ssd31_2222' type: KillProcessByJobId
+10-26 14:46 Monitor      DEBUG    Kill PS: ssd23_2222
+10-26 14:46 queue        INFO     Send message from 'monitor' to 'ssd23_2222' type: KillProcessByJobId
+10-26 14:46 Monitor      DEBUG    Kill PS: ssd15_2222
+10-26 14:46 queue        INFO     Send message from 'monitor' to 'ssd15_2222' type: KillProcessByJobId
+10-26 14:46 Monitor      DEBUG    Kill PS: ssd35_2222
+10-26 14:46 queue        INFO     Send message from 'monitor' to 'ssd35_2222' type: KillProcessByJobId
+10-26 14:46 Monitor      DEBUG    Kill PS: ssd24_2222
+10-26 14:46 queue        INFO     Send message from 'monitor' to 'ssd24_2222' type: KillProcessByJobId
+10-26 14:46 Monitor      DEBUG    Kill PS: ssd33_2222
+10-26 14:46 queue        INFO     Send message from 'monitor' to 'ssd33_2222' type: KillProcessByJobId
+10-26 14:46 Monitor      DEBUG    Kill PS: ssd19_2222
+10-26 14:46 queue        INFO     Send message from 'monitor' to 'ssd19_2222' type: KillProcessByJobId
+10-26 14:46 Monitor      DEBUG    Kill PS: ssd27_2222
+10-26 14:46 queue        INFO     Send message from 'monitor' to 'ssd27_2222' type: KillProcessByJobId
+10-26 14:46 Monitor      DEBUG    Kill PS: ssd16_2222
+10-26 14:46 queue        INFO     Send message from 'monitor' to 'ssd16_2222' type: KillProcessByJobId
+10-26 14:46 Monitor      DEBUG    Kill PS: ssd10_2222
+10-26 14:46 queue        INFO     Send message from 'monitor' to 'ssd10_2222' type: KillProcessByJobId
+10-26 14:46 Monitor      DEBUG    Kill PS: ssd32_2222
+10-26 14:46 queue        INFO     Send message from 'monitor' to 'ssd32_2222' type: KillProcessByJobId
+10-26 14:46 Monitor      DEBUG    Kill PS: ssd25_2222
+10-26 14:46 queue        INFO     Send message from 'monitor' to 'ssd25_2222' type: KillProcessByJobId
+10-26 14:46 Monitor      DEBUG    Kill PS: ssd11_2222
+10-26 14:46 queue        INFO     Send message from 'monitor' to 'ssd11_2222' type: KillProcessByJobId
+10-26 14:46 Monitor      DEBUG    Kill PS: ssd21_2222
+10-26 14:46 queue        INFO     Send message from 'monitor' to 'ssd21_2222' type: KillProcessByJobId
+10-26 14:46 Monitor      DEBUG    Kill PS: ssd13_2222
+10-26 14:46 queue        INFO     Send message from 'monitor' to 'ssd13_2222' type: KillProcessByJobId
+10-26 14:46 Monitor      DEBUG    Kill PS: ssd22_2222
+10-26 14:46 queue        INFO     Send message from 'monitor' to 'ssd22_2222' type: KillProcessByJobId
+10-26 14:46 Monitor      DEBUG    Kill PS: ssd30_2222
+10-26 14:46 queue        INFO     Send message from 'monitor' to 'ssd30_2222' type: KillProcessByJobId
+10-26 14:46 Monitor      DEBUG    Kill PS: ssd17_2222
+10-26 14:46 queue        INFO     Send message from 'monitor' to 'ssd17_2222' type: KillProcessByJobId
+10-26 14:46 Monitor      DEBUG    Kill PS: ssd26_2222
+10-26 14:46 queue        INFO     Send message from 'monitor' to 'ssd26_2222' type: KillProcessByJobId
+10-26 14:46 Monitor      DEBUG    Kill PS: ssd37_2222
+10-26 14:46 queue        INFO     Send message from 'monitor' to 'ssd37_2222' type: KillProcessByJobId
+10-26 14:46 Monitor      DEBUG    Kill PS: ssd20_2222
+10-26 14:46 queue        INFO     Send message from 'monitor' to 'ssd20_2222' type: KillProcessByJobId
+10-26 14:46 Monitor      DEBUG    Kill PS: ssd07_2222
+10-26 14:46 queue        INFO     Send message from 'monitor' to 'ssd07_2222' type: KillProcessByJobId
+10-26 14:46 Monitor      DEBUG    Kill PS: ssd28_2222
+10-26 14:46 queue        INFO     Send message from 'monitor' to 'ssd28_2222' type: KillProcessByJobId
+10-26 14:46 Monitor      DEBUG    Kill PS: ssd18_2222
+10-26 14:46 queue        INFO     Send message from 'monitor' to 'ssd18_2222' type: KillProcessByJobId
+10-26 14:46 Monitor      DEBUG    Kill PS: ssd08_2222
+10-26 14:46 queue        INFO     Send message from 'monitor' to 'ssd08_2222' type: KillProcessByJobId
+10-26 14:46 Monitor      DEBUG    Kill PS: ssd29_2222
+10-26 14:46 queue        INFO     Send message from 'monitor' to 'ssd29_2222' type: KillProcessByJobId
+10-26 14:46 root         DEBUG    ssd12_2222 is not finish
+10-26 14:46 root         DEBUG    ssd38_2222 is not finish
+10-26 14:46 root         DEBUG    ssd09_2222 is not finish
+10-26 14:46 root         DEBUG    ssd14_2222 is not finish
+10-26 14:46 root         DEBUG    ssd31_2222 is not finish
+10-26 14:46 root         DEBUG    ssd23_2222 is not finish
+10-26 14:46 root         DEBUG    ssd15_2222 is not finish
+10-26 14:46 root         DEBUG    ssd35_2222 is not finish
+10-26 14:46 root         DEBUG    ssd24_2222 is not finish
+10-26 14:46 root         DEBUG    ssd33_2222 is not finish
+10-26 14:46 root         DEBUG    ssd19_2222 is not finish
+10-26 14:46 root         DEBUG    ssd27_2222 is not finish
+10-26 14:46 root         DEBUG    ssd16_2222 is not finish
+10-26 14:46 root         DEBUG    ssd10_2222 is not finish
+10-26 14:46 root         DEBUG    ssd32_2222 is not finish
+10-26 14:46 root         DEBUG    ssd25_2222 is not finish
+10-26 14:46 root         DEBUG    ssd11_2222 is not finish
+10-26 14:46 root         DEBUG    ssd21_2222 is not finish
+10-26 14:46 root         DEBUG    ssd13_2222 is not finish
+10-26 14:46 root         DEBUG    ssd22_2222 is not finish
+10-26 14:46 root         DEBUG    ssd30_2222 is not finish
+10-26 14:46 root         DEBUG    ssd17_2222 is not finish
+10-26 14:46 root         DEBUG    ssd26_2222 is not finish
+10-26 14:46 root         DEBUG    ssd37_2222 is not finish
+10-26 14:46 root         DEBUG    ssd20_2222 is not finish
+10-26 14:46 root         DEBUG    ssd07_2222 is not finish
+10-26 14:46 root         DEBUG    ssd28_2222 is not finish
+10-26 14:46 root         DEBUG    ssd18_2222 is not finish
+10-26 14:46 root         DEBUG    ssd08_2222 is not finish
+10-26 14:46 root         DEBUG    ssd29_2222 is not finish
+10-26 14:46 Monitor      DEBUG    Receive msg from ssd23_2222 type: FinishProcess
+10-26 14:46 root         DEBUG    ssd12_2222 is not finish
+10-26 14:46 root         DEBUG    ssd38_2222 is not finish
+10-26 14:46 root         DEBUG    ssd09_2222 is not finish
+10-26 14:46 root         DEBUG    ssd14_2222 is not finish
+10-26 14:46 root         DEBUG    ssd31_2222 is not finish
+10-26 14:46 root         DEBUG    ssd15_2222 is not finish
+10-26 14:46 root         DEBUG    ssd35_2222 is not finish
+10-26 14:46 root         DEBUG    ssd24_2222 is not finish
+10-26 14:46 root         DEBUG    ssd33_2222 is not finish
+10-26 14:46 root         DEBUG    ssd19_2222 is not finish
+10-26 14:46 root         DEBUG    ssd27_2222 is not finish
+10-26 14:46 root         DEBUG    ssd16_2222 is not finish
+10-26 14:46 root         DEBUG    ssd10_2222 is not finish
+10-26 14:46 root         DEBUG    ssd32_2222 is not finish
+10-26 14:46 root         DEBUG    ssd25_2222 is not finish
+10-26 14:46 root         DEBUG    ssd11_2222 is not finish
+10-26 14:46 root         DEBUG    ssd21_2222 is not finish
+10-26 14:46 root         DEBUG    ssd13_2222 is not finish
+10-26 14:46 root         DEBUG    ssd22_2222 is not finish
+10-26 14:46 root         DEBUG    ssd30_2222 is not finish
+10-26 14:46 root         DEBUG    ssd17_2222 is not finish
+10-26 14:46 root         DEBUG    ssd26_2222 is not finish
+10-26 14:46 root         DEBUG    ssd37_2222 is not finish
+10-26 14:46 root         DEBUG    ssd20_2222 is not finish
+10-26 14:46 root         DEBUG    ssd07_2222 is not finish
+10-26 14:46 root         DEBUG    ssd28_2222 is not finish
+10-26 14:46 root         DEBUG    ssd18_2222 is not finish
+10-26 14:46 root         DEBUG    ssd08_2222 is not finish
+10-26 14:46 root         DEBUG    ssd29_2222 is not finish
+10-26 14:46 Monitor      DEBUG    Receive msg from ssd21_2222 type: FinishProcess
+10-26 14:46 root         DEBUG    ssd12_2222 is not finish
+10-26 14:46 root         DEBUG    ssd38_2222 is not finish
+10-26 14:46 root         DEBUG    ssd09_2222 is not finish
+10-26 14:46 root         DEBUG    ssd14_2222 is not finish
+10-26 14:46 root         DEBUG    ssd31_2222 is not finish
+10-26 14:46 root         DEBUG    ssd15_2222 is not finish
+10-26 14:46 root         DEBUG    ssd35_2222 is not finish
+10-26 14:46 root         DEBUG    ssd24_2222 is not finish
+10-26 14:46 root         DEBUG    ssd33_2222 is not finish
+10-26 14:46 root         DEBUG    ssd19_2222 is not finish
+10-26 14:46 root         DEBUG    ssd27_2222 is not finish
+10-26 14:46 root         DEBUG    ssd16_2222 is not finish
+10-26 14:46 root         DEBUG    ssd10_2222 is not finish
+10-26 14:46 root         DEBUG    ssd32_2222 is not finish
+10-26 14:46 root         DEBUG    ssd25_2222 is not finish
+10-26 14:46 root         DEBUG    ssd11_2222 is not finish
+10-26 14:46 root         DEBUG    ssd13_2222 is not finish
+10-26 14:46 root         DEBUG    ssd22_2222 is not finish
+10-26 14:46 root         DEBUG    ssd30_2222 is not finish
+10-26 14:46 root         DEBUG    ssd17_2222 is not finish
+10-26 14:46 root         DEBUG    ssd26_2222 is not finish
+10-26 14:46 root         DEBUG    ssd37_2222 is not finish
+10-26 14:46 root         DEBUG    ssd20_2222 is not finish
+10-26 14:46 root         DEBUG    ssd07_2222 is not finish
+10-26 14:46 root         DEBUG    ssd28_2222 is not finish
+10-26 14:46 root         DEBUG    ssd18_2222 is not finish
+10-26 14:46 root         DEBUG    ssd08_2222 is not finish
+10-26 14:46 root         DEBUG    ssd29_2222 is not finish
+10-26 14:46 Monitor      DEBUG    Receive msg from ssd08_2222 type: FinishProcess
+10-26 14:46 root         DEBUG    ssd12_2222 is not finish
+10-26 14:46 root         DEBUG    ssd38_2222 is not finish
+10-26 14:46 root         DEBUG    ssd09_2222 is not finish
+10-26 14:46 root         DEBUG    ssd14_2222 is not finish
+10-26 14:46 root         DEBUG    ssd31_2222 is not finish
+10-26 14:46 root         DEBUG    ssd15_2222 is not finish
+10-26 14:46 root         DEBUG    ssd35_2222 is not finish
+10-26 14:46 root         DEBUG    ssd24_2222 is not finish
+10-26 14:46 root         DEBUG    ssd33_2222 is not finish
+10-26 14:46 root         DEBUG    ssd19_2222 is not finish
+10-26 14:46 root         DEBUG    ssd27_2222 is not finish
+10-26 14:46 root         DEBUG    ssd16_2222 is not finish
+10-26 14:46 root         DEBUG    ssd10_2222 is not finish
+10-26 14:46 root         DEBUG    ssd32_2222 is not finish
+10-26 14:46 root         DEBUG    ssd25_2222 is not finish
+10-26 14:46 root         DEBUG    ssd11_2222 is not finish
+10-26 14:46 root         DEBUG    ssd13_2222 is not finish
+10-26 14:46 root         DEBUG    ssd22_2222 is not finish
+10-26 14:46 root         DEBUG    ssd30_2222 is not finish
+10-26 14:46 root         DEBUG    ssd17_2222 is not finish
+10-26 14:46 root         DEBUG    ssd26_2222 is not finish
+10-26 14:46 root         DEBUG    ssd37_2222 is not finish
+10-26 14:46 root         DEBUG    ssd20_2222 is not finish
+10-26 14:46 root         DEBUG    ssd07_2222 is not finish
+10-26 14:46 root         DEBUG    ssd28_2222 is not finish
+10-26 14:46 root         DEBUG    ssd18_2222 is not finish
+10-26 14:46 root         DEBUG    ssd29_2222 is not finish
+10-26 14:46 Monitor      DEBUG    Receive msg from ssd22_2222 type: FinishProcess
+10-26 14:46 root         DEBUG    ssd12_2222 is not finish
+10-26 14:46 root         DEBUG    ssd38_2222 is not finish
+10-26 14:46 root         DEBUG    ssd09_2222 is not finish
+10-26 14:46 root         DEBUG    ssd14_2222 is not finish
+10-26 14:46 root         DEBUG    ssd31_2222 is not finish
+10-26 14:46 root         DEBUG    ssd15_2222 is not finish
+10-26 14:46 root         DEBUG    ssd35_2222 is not finish
+10-26 14:46 root         DEBUG    ssd24_2222 is not finish
+10-26 14:46 root         DEBUG    ssd33_2222 is not finish
+10-26 14:46 root         DEBUG    ssd19_2222 is not finish
+10-26 14:46 root         DEBUG    ssd27_2222 is not finish
+10-26 14:46 root         DEBUG    ssd16_2222 is not finish
+10-26 14:46 root         DEBUG    ssd10_2222 is not finish
+10-26 14:46 root         DEBUG    ssd32_2222 is not finish
+10-26 14:46 root         DEBUG    ssd25_2222 is not finish
+10-26 14:46 root         DEBUG    ssd11_2222 is not finish
+10-26 14:46 root         DEBUG    ssd13_2222 is not finish
+10-26 14:46 root         DEBUG    ssd30_2222 is not finish
+10-26 14:46 root         DEBUG    ssd17_2222 is not finish
+10-26 14:46 root         DEBUG    ssd26_2222 is not finish
+10-26 14:46 root         DEBUG    ssd37_2222 is not finish
+10-26 14:46 root         DEBUG    ssd20_2222 is not finish
+10-26 14:46 root         DEBUG    ssd07_2222 is not finish
+10-26 14:46 root         DEBUG    ssd28_2222 is not finish
+10-26 14:46 root         DEBUG    ssd18_2222 is not finish
+10-26 14:46 root         DEBUG    ssd29_2222 is not finish
+10-26 14:46 Monitor      DEBUG    Receive msg from ssd15_2222 type: FinishProcess
+10-26 14:46 root         DEBUG    ssd12_2222 is not finish
+10-26 14:46 root         DEBUG    ssd38_2222 is not finish
+10-26 14:46 root         DEBUG    ssd09_2222 is not finish
+10-26 14:46 root         DEBUG    ssd14_2222 is not finish
+10-26 14:46 root         DEBUG    ssd31_2222 is not finish
+10-26 14:46 root         DEBUG    ssd35_2222 is not finish
+10-26 14:46 root         DEBUG    ssd24_2222 is not finish
+10-26 14:46 root         DEBUG    ssd33_2222 is not finish
+10-26 14:46 root         DEBUG    ssd19_2222 is not finish
+10-26 14:46 root         DEBUG    ssd27_2222 is not finish
+10-26 14:46 root         DEBUG    ssd16_2222 is not finish
+10-26 14:46 root         DEBUG    ssd10_2222 is not finish
+10-26 14:46 root         DEBUG    ssd32_2222 is not finish
+10-26 14:46 root         DEBUG    ssd25_2222 is not finish
+10-26 14:46 root         DEBUG    ssd11_2222 is not finish
+10-26 14:46 root         DEBUG    ssd13_2222 is not finish
+10-26 14:46 root         DEBUG    ssd30_2222 is not finish
+10-26 14:46 root         DEBUG    ssd17_2222 is not finish
+10-26 14:46 root         DEBUG    ssd26_2222 is not finish
+10-26 14:46 root         DEBUG    ssd37_2222 is not finish
+10-26 14:46 root         DEBUG    ssd20_2222 is not finish
+10-26 14:46 root         DEBUG    ssd07_2222 is not finish
+10-26 14:46 root         DEBUG    ssd28_2222 is not finish
+10-26 14:46 root         DEBUG    ssd18_2222 is not finish
+10-26 14:46 root         DEBUG    ssd29_2222 is not finish
+10-26 14:46 Monitor      DEBUG    Receive msg from ssd11_2222 type: FinishProcess
+10-26 14:46 root         DEBUG    ssd12_2222 is not finish
+10-26 14:46 root         DEBUG    ssd38_2222 is not finish
+10-26 14:46 root         DEBUG    ssd09_2222 is not finish
+10-26 14:46 root         DEBUG    ssd14_2222 is not finish
+10-26 14:46 root         DEBUG    ssd31_2222 is not finish
+10-26 14:46 root         DEBUG    ssd35_2222 is not finish
+10-26 14:46 root         DEBUG    ssd24_2222 is not finish
+10-26 14:46 root         DEBUG    ssd33_2222 is not finish
+10-26 14:46 root         DEBUG    ssd19_2222 is not finish
+10-26 14:46 root         DEBUG    ssd27_2222 is not finish
+10-26 14:46 root         DEBUG    ssd16_2222 is not finish
+10-26 14:46 root         DEBUG    ssd10_2222 is not finish
+10-26 14:46 root         DEBUG    ssd32_2222 is not finish
+10-26 14:46 root         DEBUG    ssd25_2222 is not finish
+10-26 14:46 root         DEBUG    ssd13_2222 is not finish
+10-26 14:46 root         DEBUG    ssd30_2222 is not finish
+10-26 14:46 root         DEBUG    ssd17_2222 is not finish
+10-26 14:46 root         DEBUG    ssd26_2222 is not finish
+10-26 14:46 root         DEBUG    ssd37_2222 is not finish
+10-26 14:46 root         DEBUG    ssd20_2222 is not finish
+10-26 14:46 root         DEBUG    ssd07_2222 is not finish
+10-26 14:46 root         DEBUG    ssd28_2222 is not finish
+10-26 14:46 root         DEBUG    ssd18_2222 is not finish
+10-26 14:46 root         DEBUG    ssd29_2222 is not finish
+10-26 14:46 Monitor      DEBUG    Receive msg from ssd13_2222 type: FinishProcess
+10-26 14:46 root         DEBUG    ssd12_2222 is not finish
+10-26 14:46 root         DEBUG    ssd38_2222 is not finish
+10-26 14:46 root         DEBUG    ssd09_2222 is not finish
+10-26 14:46 root         DEBUG    ssd14_2222 is not finish
+10-26 14:46 root         DEBUG    ssd31_2222 is not finish
+10-26 14:46 root         DEBUG    ssd35_2222 is not finish
+10-26 14:46 root         DEBUG    ssd24_2222 is not finish
+10-26 14:46 root         DEBUG    ssd33_2222 is not finish
+10-26 14:46 root         DEBUG    ssd19_2222 is not finish
+10-26 14:46 root         DEBUG    ssd27_2222 is not finish
+10-26 14:46 root         DEBUG    ssd16_2222 is not finish
+10-26 14:46 root         DEBUG    ssd10_2222 is not finish
+10-26 14:46 root         DEBUG    ssd32_2222 is not finish
+10-26 14:46 root         DEBUG    ssd25_2222 is not finish
+10-26 14:46 root         DEBUG    ssd30_2222 is not finish
+10-26 14:46 root         DEBUG    ssd17_2222 is not finish
+10-26 14:46 root         DEBUG    ssd26_2222 is not finish
+10-26 14:46 root         DEBUG    ssd37_2222 is not finish
+10-26 14:46 root         DEBUG    ssd20_2222 is not finish
+10-26 14:46 root         DEBUG    ssd07_2222 is not finish
+10-26 14:46 root         DEBUG    ssd28_2222 is not finish
+10-26 14:46 root         DEBUG    ssd18_2222 is not finish
+10-26 14:46 root         DEBUG    ssd29_2222 is not finish
+10-26 14:46 Monitor      DEBUG    Receive msg from ssd18_2222 type: FinishProcess
+10-26 14:46 root         DEBUG    ssd12_2222 is not finish
+10-26 14:46 root         DEBUG    ssd38_2222 is not finish
+10-26 14:46 root         DEBUG    ssd09_2222 is not finish
+10-26 14:46 root         DEBUG    ssd14_2222 is not finish
+10-26 14:46 root         DEBUG    ssd31_2222 is not finish
+10-26 14:46 root         DEBUG    ssd35_2222 is not finish
+10-26 14:46 root         DEBUG    ssd24_2222 is not finish
+10-26 14:46 root         DEBUG    ssd33_2222 is not finish
+10-26 14:46 root         DEBUG    ssd19_2222 is not finish
+10-26 14:46 root         DEBUG    ssd27_2222 is not finish
+10-26 14:46 root         DEBUG    ssd16_2222 is not finish
+10-26 14:46 root         DEBUG    ssd10_2222 is not finish
+10-26 14:46 root         DEBUG    ssd32_2222 is not finish
+10-26 14:46 root         DEBUG    ssd25_2222 is not finish
+10-26 14:46 root         DEBUG    ssd30_2222 is not finish
+10-26 14:46 root         DEBUG    ssd17_2222 is not finish
+10-26 14:46 root         DEBUG    ssd26_2222 is not finish
+10-26 14:46 root         DEBUG    ssd37_2222 is not finish
+10-26 14:46 root         DEBUG    ssd20_2222 is not finish
+10-26 14:46 root         DEBUG    ssd07_2222 is not finish
+10-26 14:46 root         DEBUG    ssd28_2222 is not finish
+10-26 14:46 root         DEBUG    ssd29_2222 is not finish
+10-26 14:46 Monitor      DEBUG    Receive msg from ssd24_2222 type: FinishProcess
+10-26 14:46 root         DEBUG    ssd12_2222 is not finish
+10-26 14:46 root         DEBUG    ssd38_2222 is not finish
+10-26 14:46 root         DEBUG    ssd09_2222 is not finish
+10-26 14:46 root         DEBUG    ssd14_2222 is not finish
+10-26 14:46 root         DEBUG    ssd31_2222 is not finish
+10-26 14:46 root         DEBUG    ssd35_2222 is not finish
+10-26 14:46 root         DEBUG    ssd33_2222 is not finish
+10-26 14:46 root         DEBUG    ssd19_2222 is not finish
+10-26 14:46 root         DEBUG    ssd27_2222 is not finish
+10-26 14:46 root         DEBUG    ssd16_2222 is not finish
+10-26 14:46 root         DEBUG    ssd10_2222 is not finish
+10-26 14:46 root         DEBUG    ssd32_2222 is not finish
+10-26 14:46 root         DEBUG    ssd25_2222 is not finish
+10-26 14:46 root         DEBUG    ssd30_2222 is not finish
+10-26 14:46 root         DEBUG    ssd17_2222 is not finish
+10-26 14:46 root         DEBUG    ssd26_2222 is not finish
+10-26 14:46 root         DEBUG    ssd37_2222 is not finish
+10-26 14:46 root         DEBUG    ssd20_2222 is not finish
+10-26 14:46 root         DEBUG    ssd07_2222 is not finish
+10-26 14:46 root         DEBUG    ssd28_2222 is not finish
+10-26 14:46 root         DEBUG    ssd29_2222 is not finish
+10-26 14:46 Monitor      DEBUG    Receive msg from ssd19_2222 type: FinishProcess
+10-26 14:46 root         DEBUG    ssd12_2222 is not finish
+10-26 14:46 root         DEBUG    ssd38_2222 is not finish
+10-26 14:46 root         DEBUG    ssd09_2222 is not finish
+10-26 14:46 root         DEBUG    ssd14_2222 is not finish
+10-26 14:46 root         DEBUG    ssd31_2222 is not finish
+10-26 14:46 root         DEBUG    ssd35_2222 is not finish
+10-26 14:46 root         DEBUG    ssd33_2222 is not finish
+10-26 14:46 root         DEBUG    ssd27_2222 is not finish
+10-26 14:46 root         DEBUG    ssd16_2222 is not finish
+10-26 14:46 root         DEBUG    ssd10_2222 is not finish
+10-26 14:46 root         DEBUG    ssd32_2222 is not finish
+10-26 14:46 root         DEBUG    ssd25_2222 is not finish
+10-26 14:46 root         DEBUG    ssd30_2222 is not finish
+10-26 14:46 root         DEBUG    ssd17_2222 is not finish
+10-26 14:46 root         DEBUG    ssd26_2222 is not finish
+10-26 14:46 root         DEBUG    ssd37_2222 is not finish
+10-26 14:46 root         DEBUG    ssd20_2222 is not finish
+10-26 14:46 root         DEBUG    ssd07_2222 is not finish
+10-26 14:46 root         DEBUG    ssd28_2222 is not finish
+10-26 14:46 root         DEBUG    ssd29_2222 is not finish
+10-26 14:46 Monitor      DEBUG    Receive msg from ssd09_2222 type: FinishProcess
+10-26 14:46 root         DEBUG    ssd12_2222 is not finish
+10-26 14:46 root         DEBUG    ssd38_2222 is not finish
+10-26 14:46 root         DEBUG    ssd14_2222 is not finish
+10-26 14:46 root         DEBUG    ssd31_2222 is not finish
+10-26 14:46 root         DEBUG    ssd35_2222 is not finish
+10-26 14:46 root         DEBUG    ssd33_2222 is not finish
+10-26 14:46 root         DEBUG    ssd27_2222 is not finish
+10-26 14:46 root         DEBUG    ssd16_2222 is not finish
+10-26 14:46 root         DEBUG    ssd10_2222 is not finish
+10-26 14:46 root         DEBUG    ssd32_2222 is not finish
+10-26 14:46 root         DEBUG    ssd25_2222 is not finish
+10-26 14:46 root         DEBUG    ssd30_2222 is not finish
+10-26 14:46 root         DEBUG    ssd17_2222 is not finish
+10-26 14:46 root         DEBUG    ssd26_2222 is not finish
+10-26 14:46 root         DEBUG    ssd37_2222 is not finish
+10-26 14:46 root         DEBUG    ssd20_2222 is not finish
+10-26 14:46 root         DEBUG    ssd07_2222 is not finish
+10-26 14:46 root         DEBUG    ssd28_2222 is not finish
+10-26 14:46 root         DEBUG    ssd29_2222 is not finish
+10-26 14:46 Monitor      DEBUG    Receive msg from ssd07_2222 type: FinishProcess
+10-26 14:46 root         DEBUG    ssd12_2222 is not finish
+10-26 14:46 root         DEBUG    ssd38_2222 is not finish
+10-26 14:46 root         DEBUG    ssd14_2222 is not finish
+10-26 14:46 root         DEBUG    ssd31_2222 is not finish
+10-26 14:46 root         DEBUG    ssd35_2222 is not finish
+10-26 14:46 root         DEBUG    ssd33_2222 is not finish
+10-26 14:46 root         DEBUG    ssd27_2222 is not finish
+10-26 14:46 root         DEBUG    ssd16_2222 is not finish
+10-26 14:46 root         DEBUG    ssd10_2222 is not finish
+10-26 14:46 root         DEBUG    ssd32_2222 is not finish
+10-26 14:46 root         DEBUG    ssd25_2222 is not finish
+10-26 14:46 root         DEBUG    ssd30_2222 is not finish
+10-26 14:46 root         DEBUG    ssd17_2222 is not finish
+10-26 14:46 root         DEBUG    ssd26_2222 is not finish
+10-26 14:46 root         DEBUG    ssd37_2222 is not finish
+10-26 14:46 root         DEBUG    ssd20_2222 is not finish
+10-26 14:46 root         DEBUG    ssd28_2222 is not finish
+10-26 14:46 root         DEBUG    ssd29_2222 is not finish
+10-26 14:46 Monitor      DEBUG    Receive msg from ssd37_2222 type: FinishProcess
+10-26 14:46 root         DEBUG    ssd12_2222 is not finish
+10-26 14:46 root         DEBUG    ssd38_2222 is not finish
+10-26 14:46 root         DEBUG    ssd14_2222 is not finish
+10-26 14:46 root         DEBUG    ssd31_2222 is not finish
+10-26 14:46 root         DEBUG    ssd35_2222 is not finish
+10-26 14:46 root         DEBUG    ssd33_2222 is not finish
+10-26 14:46 root         DEBUG    ssd27_2222 is not finish
+10-26 14:46 root         DEBUG    ssd16_2222 is not finish
+10-26 14:46 root         DEBUG    ssd10_2222 is not finish
+10-26 14:46 root         DEBUG    ssd32_2222 is not finish
+10-26 14:46 root         DEBUG    ssd25_2222 is not finish
+10-26 14:46 root         DEBUG    ssd30_2222 is not finish
+10-26 14:46 root         DEBUG    ssd17_2222 is not finish
+10-26 14:46 root         DEBUG    ssd26_2222 is not finish
+10-26 14:46 root         DEBUG    ssd20_2222 is not finish
+10-26 14:46 root         DEBUG    ssd28_2222 is not finish
+10-26 14:46 root         DEBUG    ssd29_2222 is not finish
+10-26 14:46 Monitor      DEBUG    Receive msg from ssd20_2222 type: FinishProcess
+10-26 14:46 root         DEBUG    ssd12_2222 is not finish
+10-26 14:46 root         DEBUG    ssd38_2222 is not finish
+10-26 14:46 root         DEBUG    ssd14_2222 is not finish
+10-26 14:46 root         DEBUG    ssd31_2222 is not finish
+10-26 14:46 root         DEBUG    ssd35_2222 is not finish
+10-26 14:46 root         DEBUG    ssd33_2222 is not finish
+10-26 14:46 root         DEBUG    ssd27_2222 is not finish
+10-26 14:46 root         DEBUG    ssd16_2222 is not finish
+10-26 14:46 root         DEBUG    ssd10_2222 is not finish
+10-26 14:46 root         DEBUG    ssd32_2222 is not finish
+10-26 14:46 root         DEBUG    ssd25_2222 is not finish
+10-26 14:46 root         DEBUG    ssd30_2222 is not finish
+10-26 14:46 root         DEBUG    ssd17_2222 is not finish
+10-26 14:46 root         DEBUG    ssd26_2222 is not finish
+10-26 14:46 root         DEBUG    ssd28_2222 is not finish
+10-26 14:46 root         DEBUG    ssd29_2222 is not finish
+10-26 14:46 Monitor      DEBUG    Receive msg from ssd12_2222 type: FinishProcess
+10-26 14:46 root         DEBUG    ssd38_2222 is not finish
+10-26 14:46 root         DEBUG    ssd14_2222 is not finish
+10-26 14:46 root         DEBUG    ssd31_2222 is not finish
+10-26 14:46 root         DEBUG    ssd35_2222 is not finish
+10-26 14:46 root         DEBUG    ssd33_2222 is not finish
+10-26 14:46 root         DEBUG    ssd27_2222 is not finish
+10-26 14:46 root         DEBUG    ssd16_2222 is not finish
+10-26 14:46 root         DEBUG    ssd10_2222 is not finish
+10-26 14:46 root         DEBUG    ssd32_2222 is not finish
+10-26 14:46 root         DEBUG    ssd25_2222 is not finish
+10-26 14:46 root         DEBUG    ssd30_2222 is not finish
+10-26 14:46 root         DEBUG    ssd17_2222 is not finish
+10-26 14:46 root         DEBUG    ssd26_2222 is not finish
+10-26 14:46 root         DEBUG    ssd28_2222 is not finish
+10-26 14:46 root         DEBUG    ssd29_2222 is not finish
+10-26 14:46 Monitor      DEBUG    Receive msg from ssd27_2222 type: FinishProcess
+10-26 14:46 root         DEBUG    ssd38_2222 is not finish
+10-26 14:46 root         DEBUG    ssd14_2222 is not finish
+10-26 14:46 root         DEBUG    ssd31_2222 is not finish
+10-26 14:46 root         DEBUG    ssd35_2222 is not finish
+10-26 14:46 root         DEBUG    ssd33_2222 is not finish
+10-26 14:46 root         DEBUG    ssd16_2222 is not finish
+10-26 14:46 root         DEBUG    ssd10_2222 is not finish
+10-26 14:46 root         DEBUG    ssd32_2222 is not finish
+10-26 14:46 root         DEBUG    ssd25_2222 is not finish
+10-26 14:46 root         DEBUG    ssd30_2222 is not finish
+10-26 14:46 root         DEBUG    ssd17_2222 is not finish
+10-26 14:46 root         DEBUG    ssd26_2222 is not finish
+10-26 14:46 root         DEBUG    ssd28_2222 is not finish
+10-26 14:46 root         DEBUG    ssd29_2222 is not finish
+10-26 14:46 Monitor      DEBUG    Receive msg from ssd38_2222 type: FinishProcess
+10-26 14:46 root         DEBUG    ssd14_2222 is not finish
+10-26 14:46 root         DEBUG    ssd31_2222 is not finish
+10-26 14:46 root         DEBUG    ssd35_2222 is not finish
+10-26 14:46 root         DEBUG    ssd33_2222 is not finish
+10-26 14:46 root         DEBUG    ssd16_2222 is not finish
+10-26 14:46 root         DEBUG    ssd10_2222 is not finish
+10-26 14:46 root         DEBUG    ssd32_2222 is not finish
+10-26 14:46 root         DEBUG    ssd25_2222 is not finish
+10-26 14:46 root         DEBUG    ssd30_2222 is not finish
+10-26 14:46 root         DEBUG    ssd17_2222 is not finish
+10-26 14:46 root         DEBUG    ssd26_2222 is not finish
+10-26 14:46 root         DEBUG    ssd28_2222 is not finish
+10-26 14:46 root         DEBUG    ssd29_2222 is not finish
+10-26 14:46 Monitor      DEBUG    Receive msg from ssd25_2222 type: FinishProcess
+10-26 14:46 root         DEBUG    ssd14_2222 is not finish
+10-26 14:46 root         DEBUG    ssd31_2222 is not finish
+10-26 14:46 root         DEBUG    ssd35_2222 is not finish
+10-26 14:46 root         DEBUG    ssd33_2222 is not finish
+10-26 14:46 root         DEBUG    ssd16_2222 is not finish
+10-26 14:46 root         DEBUG    ssd10_2222 is not finish
+10-26 14:46 root         DEBUG    ssd32_2222 is not finish
+10-26 14:46 root         DEBUG    ssd30_2222 is not finish
+10-26 14:46 root         DEBUG    ssd17_2222 is not finish
+10-26 14:46 root         DEBUG    ssd26_2222 is not finish
+10-26 14:46 root         DEBUG    ssd28_2222 is not finish
+10-26 14:46 root         DEBUG    ssd29_2222 is not finish
+10-26 14:46 Monitor      DEBUG    Receive msg from ssd16_2222 type: FinishProcess
+10-26 14:46 root         DEBUG    ssd14_2222 is not finish
+10-26 14:46 root         DEBUG    ssd31_2222 is not finish
+10-26 14:46 root         DEBUG    ssd35_2222 is not finish
+10-26 14:46 root         DEBUG    ssd33_2222 is not finish
+10-26 14:46 root         DEBUG    ssd10_2222 is not finish
+10-26 14:46 root         DEBUG    ssd32_2222 is not finish
+10-26 14:46 root         DEBUG    ssd30_2222 is not finish
+10-26 14:46 root         DEBUG    ssd17_2222 is not finish
+10-26 14:46 root         DEBUG    ssd26_2222 is not finish
+10-26 14:46 root         DEBUG    ssd28_2222 is not finish
+10-26 14:46 root         DEBUG    ssd29_2222 is not finish
+10-26 14:46 Monitor      DEBUG    Receive msg from ssd14_2222 type: FinishProcess
+10-26 14:46 root         DEBUG    ssd31_2222 is not finish
+10-26 14:46 root         DEBUG    ssd35_2222 is not finish
+10-26 14:46 root         DEBUG    ssd33_2222 is not finish
+10-26 14:46 root         DEBUG    ssd10_2222 is not finish
+10-26 14:46 root         DEBUG    ssd32_2222 is not finish
+10-26 14:46 root         DEBUG    ssd30_2222 is not finish
+10-26 14:46 root         DEBUG    ssd17_2222 is not finish
+10-26 14:46 root         DEBUG    ssd26_2222 is not finish
+10-26 14:46 root         DEBUG    ssd28_2222 is not finish
+10-26 14:46 root         DEBUG    ssd29_2222 is not finish
+10-26 14:46 Monitor      DEBUG    Receive msg from ssd17_2222 type: FinishProcess
+10-26 14:46 root         DEBUG    ssd31_2222 is not finish
+10-26 14:46 root         DEBUG    ssd35_2222 is not finish
+10-26 14:46 root         DEBUG    ssd33_2222 is not finish
+10-26 14:46 root         DEBUG    ssd10_2222 is not finish
+10-26 14:46 root         DEBUG    ssd32_2222 is not finish
+10-26 14:46 root         DEBUG    ssd30_2222 is not finish
+10-26 14:46 root         DEBUG    ssd26_2222 is not finish
+10-26 14:46 root         DEBUG    ssd28_2222 is not finish
+10-26 14:46 root         DEBUG    ssd29_2222 is not finish
+10-26 14:46 Monitor      DEBUG    Receive msg from ssd26_2222 type: FinishProcess
+10-26 14:46 root         DEBUG    ssd31_2222 is not finish
+10-26 14:46 root         DEBUG    ssd35_2222 is not finish
+10-26 14:46 root         DEBUG    ssd33_2222 is not finish
+10-26 14:46 root         DEBUG    ssd10_2222 is not finish
+10-26 14:46 root         DEBUG    ssd32_2222 is not finish
+10-26 14:46 root         DEBUG    ssd30_2222 is not finish
+10-26 14:46 root         DEBUG    ssd28_2222 is not finish
+10-26 14:46 root         DEBUG    ssd29_2222 is not finish
+10-26 14:46 Monitor      DEBUG    Receive msg from ssd10_2222 type: FinishProcess
+10-26 14:46 root         DEBUG    ssd31_2222 is not finish
+10-26 14:46 root         DEBUG    ssd35_2222 is not finish
+10-26 14:46 root         DEBUG    ssd33_2222 is not finish
+10-26 14:46 root         DEBUG    ssd32_2222 is not finish
+10-26 14:46 root         DEBUG    ssd30_2222 is not finish
+10-26 14:46 root         DEBUG    ssd28_2222 is not finish
+10-26 14:46 root         DEBUG    ssd29_2222 is not finish
+10-26 14:46 Monitor      DEBUG    Receive msg from ssd31_2222 type: FinishProcess
+10-26 14:46 root         DEBUG    ssd35_2222 is not finish
+10-26 14:46 root         DEBUG    ssd33_2222 is not finish
+10-26 14:46 root         DEBUG    ssd32_2222 is not finish
+10-26 14:46 root         DEBUG    ssd30_2222 is not finish
+10-26 14:46 root         DEBUG    ssd28_2222 is not finish
+10-26 14:46 root         DEBUG    ssd29_2222 is not finish
+10-26 14:46 Monitor      DEBUG    Receive msg from ssd28_2222 type: FinishProcess
+10-26 14:46 root         DEBUG    ssd35_2222 is not finish
+10-26 14:46 root         DEBUG    ssd33_2222 is not finish
+10-26 14:46 root         DEBUG    ssd32_2222 is not finish
+10-26 14:46 root         DEBUG    ssd30_2222 is not finish
+10-26 14:46 root         DEBUG    ssd29_2222 is not finish
+10-26 14:46 Monitor      DEBUG    Receive msg from ssd33_2222 type: FinishProcess
+10-26 14:46 root         DEBUG    ssd35_2222 is not finish
+10-26 14:46 root         DEBUG    ssd32_2222 is not finish
+10-26 14:46 root         DEBUG    ssd30_2222 is not finish
+10-26 14:46 root         DEBUG    ssd29_2222 is not finish
+10-26 14:46 Monitor      DEBUG    Receive msg from ssd35_2222 type: FinishProcess
+10-26 14:46 root         DEBUG    ssd32_2222 is not finish
+10-26 14:46 root         DEBUG    ssd30_2222 is not finish
+10-26 14:46 root         DEBUG    ssd29_2222 is not finish
+10-26 14:46 Monitor      DEBUG    Receive msg from ssd29_2222 type: FinishProcess
+10-26 14:46 root         DEBUG    ssd32_2222 is not finish
+10-26 14:46 root         DEBUG    ssd30_2222 is not finish
+10-26 14:46 Monitor      DEBUG    Receive msg from ssd32_2222 type: FinishProcess
+10-26 14:46 root         DEBUG    ssd30_2222 is not finish
+10-26 14:46 Monitor      DEBUG    Receive msg from ssd30_2222 type: FinishProcess
+10-26 14:46 root         DEBUG    total training sample: 3, steps_for_reconfig: 60, config_history 1
+10-26 14:46 queue        INFO     Send message from 'monitor' to 'ssd08_2222' type: StartProcess
+10-26 14:46 queue        INFO     Send message from 'monitor' to 'ssd23_2222' type: StartProcess
+10-26 14:46 queue        INFO     Send message from 'monitor' to 'ssd15_2222' type: StartProcess
+10-26 14:46 queue        INFO     Send message from 'monitor' to 'ssd21_2222' type: StartProcess
+10-26 14:46 queue        INFO     Send message from 'monitor' to 'ssd13_2222' type: StartProcess
+10-26 14:46 queue        INFO     Send message from 'monitor' to 'ssd22_2222' type: StartProcess
+10-26 14:46 queue        INFO     Send message from 'monitor' to 'ssd24_2222' type: StartProcess
+10-26 14:46 queue        INFO     Send message from 'monitor' to 'ssd11_2222' type: StartProcess
+10-26 14:46 queue        INFO     Send message from 'monitor' to 'ssd18_2222' type: StartProcess
+10-26 14:46 queue        INFO     Send message from 'monitor' to 'ssd19_2222' type: StartProcess
+10-26 14:46 queue        INFO     Send message from 'monitor' to 'ssd07_2222' type: StartProcess
+10-26 14:46 queue        INFO     Send message from 'monitor' to 'ssd09_2222' type: StartProcess
+10-26 14:46 queue        INFO     Send message from 'monitor' to 'ssd27_2222' type: StartProcess
+10-26 14:46 queue        INFO     Send message from 'monitor' to 'ssd37_2222' type: StartProcess
+10-26 14:46 queue        INFO     Send message from 'monitor' to 'ssd20_2222' type: StartProcess
+10-26 14:46 queue        INFO     Send message from 'monitor' to 'ssd12_2222' type: StartProcess
+10-26 14:46 queue        INFO     Send message from 'monitor' to 'ssd25_2222' type: StartProcess
+10-26 14:46 queue        INFO     Send message from 'monitor' to 'ssd26_2222' type: StartProcess
+10-26 14:46 queue        INFO     Send message from 'monitor' to 'ssd16_2222' type: StartProcess
+10-26 14:46 queue        INFO     Send message from 'monitor' to 'ssd14_2222' type: StartProcess
+10-26 14:46 queue        INFO     Send message from 'monitor' to 'ssd17_2222' type: StartProcess
+10-26 14:46 queue        INFO     Send message from 'monitor' to 'ssd38_2222' type: StartProcess
+10-26 14:46 queue        INFO     Send message from 'monitor' to 'ssd28_2222' type: StartProcess
+10-26 14:46 queue        INFO     Send message from 'monitor' to 'ssd10_2222' type: StartProcess
+10-26 14:46 queue        INFO     Send message from 'monitor' to 'ssd33_2222' type: StartProcess
+10-26 14:46 queue        INFO     Send message from 'monitor' to 'ssd31_2222' type: StartProcess
+10-26 14:46 queue        INFO     Send message from 'monitor' to 'ssd29_2222' type: StartProcess
+10-26 14:46 queue        INFO     Send message from 'monitor' to 'ssd32_2222' type: StartProcess
+10-26 14:46 queue        INFO     Send message from 'monitor' to 'ssd35_2222' type: StartProcess
+10-26 14:46 queue        INFO     Send message from 'monitor' to 'ssd30_2222' type: StartProcess
+10-26 14:46 queue        INFO     Send message from 'monitor' to 'ssd41_2222' type: StartProcess
+10-26 14:46 queue        INFO     Send message from 'monitor' to 'ssd40_2222' type: StartProcess
+10-26 14:46 queue        INFO     Send message from 'monitor' to 'ssd42_2222' type: StartProcess
+10-26 14:46 queue        INFO     Send message from 'monitor' to 'ssd39_2222' type: StartProcess
+10-26 14:46 queue        INFO     Send message from 'monitor' to 'ssd34_2222' type: StartProcess
+10-26 14:46 queue        INFO     Send message from 'monitor' to 'ssd36_2222' type: StartProcess
+10-26 14:46 Monitor      DEBUG    Receive msg from ssd36_2222 type: SendRecoveryTime
+10-26 14:46 Monitor      DEBUG    Receive msg from ssd17_2222 type: UpdateNumOfSteps
+10-26 14:46 Monitor      DEBUG    Last global step: 64, update step: 66
+10-26 14:46 Monitor      DEBUG    Receive msg from ssd36_2222 type: UpdateNumOfSteps
+10-26 14:46 Monitor      DEBUG    Last global step: 66, update step: 66
+10-26 14:46 Monitor      DEBUG    Receive msg from ssd34_2222 type: UpdateNumOfSteps
+10-26 14:46 Monitor      DEBUG    Last global step: 66, update step: 66
+10-26 14:46 Monitor      DEBUG    Receive msg from ssd40_2222 type: UpdateNumOfSteps
+10-26 14:46 Monitor      DEBUG    Last global step: 66, update step: 66
+10-26 14:46 Monitor      DEBUG    Receive msg from ssd39_2222 type: UpdateNumOfSteps
+10-26 14:46 Monitor      DEBUG    Last global step: 66, update step: 66
+10-26 14:46 Monitor      DEBUG    Receive msg from ssd41_2222 type: UpdateNumOfSteps
+10-26 14:46 Monitor      DEBUG    Last global step: 66, update step: 66
+10-26 14:46 Monitor      DEBUG    Receive msg from ssd20_2222 type: UpdateNumOfSteps
+10-26 14:46 Monitor      DEBUG    Last global step: 66, update step: 66
+10-26 14:46 Monitor      DEBUG    Receive msg from ssd38_2222 type: UpdateNumOfSteps
+10-26 14:46 Monitor      DEBUG    Last global step: 66, update step: 66
+10-26 14:46 Monitor      DEBUG    Receive msg from ssd18_2222 type: UpdateNumOfSteps
+10-26 14:46 Monitor      DEBUG    Last global step: 66, update step: 66
+10-26 14:46 Monitor      DEBUG    Receive msg from ssd42_2222 type: UpdateNumOfSteps
+10-26 14:46 Monitor      DEBUG    Last global step: 66, update step: 66
+10-26 14:46 Monitor      DEBUG    Receive msg from ssd31_2222 type: UpdateNumOfSteps
+10-26 14:46 Monitor      DEBUG    Last global step: 66, update step: 66
+10-26 14:46 Monitor      DEBUG    Receive msg from ssd17_2222 type: UpdateNumOfSteps
+10-26 14:46 Monitor      DEBUG    Last global step: 66, update step: 70
+10-26 14:46 Monitor      DEBUG    Receive msg from ssd11_2222 type: UpdateNumOfSteps
+10-26 14:46 Monitor      DEBUG    Last global step: 70, update step: 66
+10-26 14:46 Monitor      DEBUG    Receive msg from ssd24_2222 type: UpdateNumOfSteps
+10-26 14:46 Monitor      DEBUG    Last global step: 70, update step: 66
+10-26 14:46 Monitor      DEBUG    Receive msg from ssd25_2222 type: UpdateNumOfSteps
+10-26 14:46 Monitor      DEBUG    Last global step: 70, update step: 66
+10-26 14:46 Monitor      DEBUG    Receive msg from ssd35_2222 type: UpdateNumOfSteps
+10-26 14:46 Monitor      DEBUG    Last global step: 70, update step: 66
+10-26 14:46 Monitor      DEBUG    Receive msg from ssd35_2222 type: NaturalFinishML
+10-26 14:46 Monitor      INFO     Job SVM_1026_064614 is finished, duration:43.477169 s

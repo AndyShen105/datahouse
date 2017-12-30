@@ -1,0 +1,2 @@
+job_id,runtime_sec,avg_recovery_time_sec,target_loss,ml_model,batch_size,learning_rate,final_lossos_size,os_size,n_iter_per_os
+SVM_1026_062638,17.257274,3.509883,0.200000,SVM,2000,0.001000,0.135735,10,60
